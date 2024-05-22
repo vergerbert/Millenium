@@ -685,6 +685,10 @@
 
 /* Footer модификаторы */
 
+.footer__button_width {
+  width: 341px;
+}
+
 .footer_margin-first {
   margin-top: 30px;
   margin-bottom: 32px;
