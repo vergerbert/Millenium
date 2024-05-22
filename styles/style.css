@@ -3,39 +3,6 @@
 @import url(./media.css);
 @import url(./font.css);
 
-/* Модификаторы (?) */
-
-.container {
-  width: 1160px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.highlight {
-  color: rgb(107, 90, 249);
-}
-
-.extra-bold {
-  font-weight: 800;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.regular {
-  font-weight: 400;
-}
-
-.certificate_h5 {
-  color: rgb(159, 159, 159);
-}
-
-.priority_h4-width {
-  width: 970px;
-}
-
 /* Размеры шрифтов */
 
 .h1 {
@@ -68,6 +35,28 @@
   line-height: 15px;
 }
 
+/* Глобальные Модификаторы */
+
+.highlight {
+  color: rgb(107, 90, 249);
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.white-text {
+  color: rgb(255, 255, 255);
+}
+
 /* Декоративные блоки */
 
 .awards {
@@ -75,14 +64,6 @@
 
   border-radius: 10px;
   background-color: rgb(240, 213, 119);
-}
-
-.border {
-  width: 1120px;
-  height: 438px;
-
-  border-radius: 10px;
-  border: 1px solid rgb(255, 255, 255);
 }
 
 .background {
@@ -101,6 +82,16 @@
 
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Декоративные элементы */
+
+.border {
+  width: 1120px;
+  height: 438px;
+
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .priority {
@@ -144,7 +135,54 @@
   border: 1px solid rgb(235, 235, 235);
 }
 
-/* Блоки */
+.delimiter {
+  width: 100%;
+  border: 0.5px solid rgb(107, 90, 249);
+}
+
+.checkbox {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+
+  display: inline-block;
+  position: relative;
+
+  margin-right: 13px;
+  vertical-align: sub;
+
+  border-radius: 2px;
+  background: rgb(155, 143, 255);
+}
+
+.custom-checkbox::before {
+  content: "";
+
+  width: 10px;
+  height: 7.34px;
+
+  display: inline-block;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  transition: 0.2s ease-in;
+
+  background-image: url(../images/check-mark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Декоративные блоки */
 
 .button {
   height: 60px;
@@ -157,6 +195,37 @@
   border-radius: 5px;
   color: rgb(255, 255, 255);
   background: rgb(107, 90, 249);
+}
+
+.input-box {
+  width: 338px;
+  height: 30px;
+}
+
+.input-field {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+  color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Глобальные блоки */
+
+.container {
+  width: 1160px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .description {
@@ -178,7 +247,21 @@
   width: 231px;
 }
 
-/* Header */
+.millenium {
+  height: 738px;
+
+  border-radius: 20px;
+  background: rgb(244, 248, 255);
+}
+
+.footer {
+  width: 1440px;
+  height: 569px;
+
+  background: rgb(42, 35, 103);
+}
+
+/* Header позиционирование */
 
 .container__header {
   margin-top: 32px;
@@ -213,15 +296,22 @@
 }
 
 .header__button {
-  width: 180px;
   margin-left: 20px;
 }
 
-/* Section №1 */
+/* Header модификаторы */
+
+.header__button_width {
+  width: 180px;
+}
+
+/* Content позиционирование */
 
 .container__content {
   margin-top: 67px;
 }
+
+/* Abous Us позиционирование */
 
 .content__about-us {
   position: relative;
@@ -250,7 +340,7 @@
   margin-bottom: 20px;
 }
 
-/* Section №2 */
+/* Services позиционирование */
 
 .content__services {
   margin-top: 159px;
@@ -285,7 +375,7 @@
   margin-bottom: 20px;
 }
 
-/* Section №3 */
+/* Scope позиционирование */
 
 .scope__h2 {
   margin-bottom: 59px;
@@ -321,7 +411,7 @@
   margin-bottom: 150px;
 }
 
-/* Section №4 */
+/* Awards позиционирование */
 
 .awards__gold-bitrix {
   position: absolute;
@@ -347,10 +437,6 @@
   margin-left: 487px;
 }
 
-.awards__certificate_second {
-  margin-left: 813px;
-}
-
 .certificate__text {
   margin-top: 6px;
   margin-bottom: 14px;
@@ -360,7 +446,17 @@
   text-align: center;
 }
 
-/* Section №5 */
+/* Awards модификаторы */
+
+.awards__certificate_second {
+  margin-left: 813px;
+}
+
+.certificate_h5 {
+  color: rgb(159, 159, 159);
+}
+
+/* Research позиционирование */
 
 .content__research {
   margin-top: 150px;
@@ -380,23 +476,19 @@
   margin-bottom: 15px;
 }
 
-/* Section №6 */
+/* Stages позиционирование */
 
 .stages__wrapper {
   margin-top: 63px;
 }
 
+.stages__priority {
+  margin-bottom: 55px;
+}
+
 .priority__streak {
   margin-top: 28px;
   margin-bottom: 26px;
-}
-
-.stages__priority-padding {
-  padding: 30px 80px;
-}
-
-.stages__priority-margin {
-  margin-bottom: 55px;
 }
 
 .title__wrapper {
@@ -414,6 +506,13 @@
 
 .stages__image {
   margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+/* Stages модификаторы */
+
+.stages__priority-padding {
+  padding: 30px 80px;
 }
 
 .stages__image-bottom {
@@ -422,4 +521,176 @@
 
 .priority__h4-bottom {
   margin-bottom: 200px;
+}
+
+.priority_h4-width {
+  width: 970px;
+}
+
+/* Разделитель */
+
+.img-delimiter {
+  width: 1440px;
+}
+
+.content__img-delimiter {
+  margin-top: 121px;
+  margin-left: -140px;
+  margin-bottom: 150px;
+}
+
+/* Millenium позиционирование */
+
+.content__millenium {
+  position: relative;
+  padding: 41px 98px;
+}
+
+.millenium__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.millenium__h2 {
+  margin-bottom: 50px;
+}
+
+.millenium__text {
+  margin-bottom: 20px;
+}
+
+.millenium__octa {
+  position: absolute;
+
+  margin-top: -110px;
+  margin-left: 250px;
+}
+
+.millenium__form-wrapper {
+  margin-top: 24px;
+}
+
+.millenium__h3 {
+  text-align: center;
+}
+
+.millenium__form-text {
+  text-align: center;
+
+  margin-top: 28px;
+  margin-bottom: 40px;
+}
+
+.millenium__input-box {
+  margin-bottom: 31px;
+}
+
+.millenium__button {
+  margin-bottom: 25px;
+}
+
+.millenium__hand {
+  margin-top: -60px;
+  margin-left: -98px;
+}
+
+.millenium__cylinder {
+  position: absolute;
+
+  top: 240px;
+  right: -40px;
+}
+
+.millenium__confetti {
+  position: absolute;
+
+  top: 540px;
+  right: 590px;
+}
+
+.millenium__cube {
+  position: absolute;
+
+  top: 643px;
+  right: -10px;
+}
+
+/* Millenium модификаторы */
+
+.millenium_text-width {
+  width: 448px;
+}
+
+.millenium_h2 {
+  width: 205px;
+}
+
+.millenium__form_padding {
+  padding: 56px 56px 47px 57px;
+}
+
+
+.millenium__form_size {
+  width: 472px;
+  height: 486px;
+
+  border-radius: 20px;
+  background: rgb(107, 90, 249);
+}
+
+.millenium_form-button {
+  width: 341px;
+
+  color: rgb(107, 90, 249);
+  background: rgb(255, 255, 255);
+}
+
+.millenium_highlight {
+  color: rgb(155, 143, 255);
+}
+
+/* Footer позиционирование */
+
+.container__footer {
+  margin-top: 269px;
+  margin-left: -140px;
+}
+
+.footer__wrapper {
+  padding: 75px 140px 58px 140px;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-wrap {
+  display: flex;
+  column-gap: 20px;
+}
+
+.footer__logo {
+  margin-left: 500px;
+  margin-bottom: 20px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 16px;
+}
+
+/* Footer модификаторы */
+
+.footer_margin-first {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.footer_margin-second {
+  margin-top: 14px;
+  margin-bottom: 24px;
 }
