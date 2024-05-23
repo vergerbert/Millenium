@@ -1,0 +1,8 @@
+@media (min-width: 1440px) {
+
+  /* display: none; */
+
+  .burger, .call, .stages__laptop {
+    display: none;
+  }
+}

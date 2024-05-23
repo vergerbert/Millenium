@@ -57,13 +57,55 @@
   color: rgb(255, 255, 255);
 }
 
+/* Глобальные блоки */
+
+.container {
+  width: 1440px;
+  padding: 0 140px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.description {
+  width: 619px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.offer {
+  width: 472px;
+  
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.certificate {
+  width: 231px;
+}
+
+.footer {
+  width: 1440px;
+  height: 569px;
+
+  background: rgb(42, 35, 103);
+}
+
 /* Декоративные блоки */
 
-.awards {
-  height: 490px;
+.button {
+  height: 60px;
+  width: 275px;
 
-  border-radius: 10px;
-  background-color: rgb(240, 213, 119);
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: rgb(107, 90, 249);
 }
 
 .background {
@@ -82,6 +124,33 @@
 
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.awards {
+  height: 490px;
+
+  border-radius: 10px;
+  background-color: rgb(240, 213, 119);
+}
+
+.img-certificate {
+  width: 231px;
+  height: 327px;
+}
+
+.millenium {
+  height: 738px;
+
+  border-radius: 20px;
+  background: rgb(244, 248, 255);
+}
+
+.form {
+  width: 472px;
+  height: 486px;
+
+  border-radius: 20px;
+  background: rgb(107, 90, 249);
 }
 
 /* Декоративные элементы */
@@ -182,21 +251,6 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Декоративные блоки */
-
-.button {
-  height: 60px;
-  width: 275px;
-
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 15px;
-
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  background: rgb(107, 90, 249);
-}
-
 .input-box {
   width: 338px;
   height: 30px;
@@ -217,48 +271,6 @@
 
 .input-field::placeholder {
   color: rgba(255, 255, 255, 0.4);
-}
-
-/* Глобальные блоки */
-
-.container {
-  width: 1160px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.description {
-  width: 619px;
-
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.offer {
-  width: 472px;
-  
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.certificate {
-  width: 231px;
-}
-
-.millenium {
-  height: 738px;
-
-  border-radius: 20px;
-  background: rgb(244, 248, 255);
-}
-
-.footer {
-  width: 1440px;
-  height: 569px;
-
-  background: rgb(42, 35, 103);
 }
 
 /* Header позиционирование */
@@ -351,14 +363,6 @@
   margin-top: 54px;
 }
 
-.services__swiper-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-
-  column-gap: 20px;
-  row-gap: 54px;
-}
-
 .swiper__stripe {
   margin-top: 9px;
   margin-bottom: 9px;
@@ -373,6 +377,16 @@
 .services__spoiler {
   margin-top: 25px;
   margin-bottom: 20px;
+}
+
+/* Services модификаторы */
+
+.services__swiper_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 20px;
+  row-gap: 54px;
 }
 
 /* Scope позиционирование */
@@ -393,12 +407,18 @@
 }
 
 .scope__item {
-  margin-bottom: 8px;
+  position: relative;
+
+  padding-left: 17px;
+  padding-bottom: 8px;
 }
 
 .scope__item::before {
   content: '𒊹';
-  margin-right: 3px;
+  position: absolute;
+
+  left: 0;
+  top: 0;
 }
 
 .button__wrapper {
@@ -467,13 +487,20 @@
   float: right;
 }
 
-.research__wrapper {
+.research__wrap {
   margin-top: 66px;
   margin-right: 10px;
 }
 
 .research__h4 {
   margin-bottom: 15px;
+}
+
+/* Research модификаторы */
+
+.research_h4 {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* Stages позиционирование */
@@ -506,25 +533,24 @@
 
 .stages__image {
   margin-top: 100px;
-  margin-bottom: 70px;
 }
 
 /* Stages модификаторы */
 
-.stages__priority-padding {
+.stages__priority_padding {
   padding: 30px 80px;
 }
 
-.stages__image-bottom {
+.stages__image_bottom {
   margin-bottom: 70px;
 }
 
-.priority__h4-bottom {
+.priority__h4_bottom {
   margin-bottom: 200px;
 }
 
-.priority_h4-width {
-  width: 970px;
+.priority__h4_width {
+  width: 100%;
 }
 
 /* Разделитель */
@@ -534,51 +560,31 @@
 }
 
 .content__img-delimiter {
-  margin-top: 121px;
-  margin-left: -140px;
-  margin-bottom: 150px;
+  margin: 121px -140px 150px;
 }
 
 /* Millenium позиционирование */
 
 .content__millenium {
-  position: relative;
-  padding: 41px 98px;
-}
-
-.millenium__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.millenium__h2 {
-  margin-bottom: 50px;
-}
-
 .millenium__text {
-  margin-bottom: 20px;
+  width: 448px;
 }
 
-.millenium__octa {
-  position: absolute;
-
-  margin-top: -110px;
-  margin-left: 250px;
+.millenium__h4 {
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
-.millenium__form-wrapper {
+.millenium__form {
   margin-top: 24px;
 }
 
-.millenium__h3 {
-  text-align: center;
-}
-
-.millenium__form-text {
-  text-align: center;
-
-  margin-top: 28px;
-  margin-bottom: 40px;
+.millenium__p {
+  margin-bottom: 46px;
 }
 
 .millenium__input-box {
@@ -589,9 +595,13 @@
   margin-bottom: 25px;
 }
 
-.millenium__hand {
-  margin-top: -60px;
-  margin-left: -98px;
+/* Millenium позиционирование изображений */
+
+.millenium__octa {
+  position: absolute;
+
+  top: -70px;
+  left: 351px;
 }
 
 .millenium__cylinder {
@@ -615,34 +625,42 @@
   right: -10px;
 }
 
-/* Millenium модификаторы */
-
-.millenium_text-width {
-  width: 448px;
+.millenium__hand {
+  position: absolute;
+  left: 0;
+  top: 487px;
 }
 
-.millenium_h2 {
-  width: 205px;
+/* Millenium модификаторы */
+
+.content__millenium_padding {
+  position: relative;
+  padding: 41px 98px;
 }
 
 .millenium__form_padding {
   padding: 56px 56px 47px 57px;
 }
 
-
-.millenium__form_size {
-  width: 472px;
-  height: 486px;
-
-  border-radius: 20px;
-  background: rgb(107, 90, 249);
+.millenium__h2_width {
+  width: 205px;
 }
 
-.millenium_form-button {
+.millenium_h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.millenium__form_button {
   width: 341px;
 
   color: rgb(107, 90, 249);
   background: rgb(255, 255, 255);
+}
+
+.millenium_text-align {
+  text-align: center;
+  margin-bottom: 28px;
 }
 
 .millenium_highlight {
@@ -654,10 +672,6 @@
 .container__footer {
   margin-top: 269px;
   margin-left: -140px;
-}
-
-.footer__wrapper {
-  padding: 75px 140px 58px 140px;
 }
 
 .footer__flex {
@@ -685,16 +699,25 @@
 
 /* Footer модификаторы */
 
+.container__footer_padding {
+  padding: 75px 140px 58px 140px;
+}
+
 .footer__button_width {
   width: 341px;
 }
 
-.footer_margin-first {
+.footer_margin1 {
   margin-top: 30px;
   margin-bottom: 32px;
 }
 
-.footer_margin-second {
+.footer_margin2 {
   margin-top: 14px;
   margin-bottom: 24px;
+}
+
+.footer_h4 {
+  font-size: 18px;
+  line-height: 22px;
 }
