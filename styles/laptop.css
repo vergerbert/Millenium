@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
 
   /* Размеры шрифтов */
 
@@ -7,12 +7,7 @@
     line-height: 35px;
   }
 
-  .h2 {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .h3 {
+  .title, .subtitle {
     font-size: 24px;
     line-height: 29px;
   }
@@ -25,7 +20,7 @@
   }
 
   .logo {
-    width: 156px;
+    width: 177px;
     height: 55px;
   }
 
@@ -37,7 +32,7 @@
   }
 
   .offer {
-    width: 265px;
+    width: 287px;
     
     font-size: 12px;
     line-height: 16px;
@@ -53,21 +48,19 @@
   .background {
     width: 569px;
     height: 378px;
-
-    background-image: url(../images/background2.svg);
   }
 
   .swiper-slide {
     width: 364px;
   }
 
+  .awards {
+    height: 1125px;
+  }
+
   .gold-bitrix {
     width: 185px;
     height: 226px;
-  }
-
-  .awards {
-    height: 1125px;
   }
 
   .certificate {
@@ -79,13 +72,13 @@
     height: 607px;
   }
 
+  .millenium {
+    height: 1015px;
+  }
+
   .scheme {
     width: 370px;
     height: 308px;
-  }
-
-  .millenium {
-    height: 1015px;
   }
 
   /* Декоративные элементы */
@@ -95,42 +88,13 @@
     height: 1067px;
   }
 
-  /* Кнопка скрытого меню */
-
-  .burger {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-  }
-
-  .burger__line {
-    height: 4px;
-
-    border-radius: 1px;
-    background: rgb(107, 90, 249);
-  }
-
-  .burger__line_top {
-    width: 41px;
-  }
-
-  .burger__line_middle {
-    width: 27px;
-  }
-
-  .burger__line_bottom {
-    width: 15px;
-  }
-
   /* Header позиционирование */
 
   .container__header {
     margin: 23px 15px 19px 31px;
   }
 
-  /* Header модификаторы */
-
-  .header__wrapper_laptop {
+  .header__inner {
     width: 100%;
 
     display: flex;
@@ -151,8 +115,9 @@
     right: -83px;
   }
 
-  .about-us__h2 {
+  .about-us__title {
     flex-direction: row;
+    gap: 7px;
   }
 
   .about-us__description {
@@ -174,19 +139,17 @@
     margin-top: 33px;
   }
 
+  .services__inner {
+    row-gap: 40px;
+  }
+
   .services__spoiler {
     margin-top: 20px;
   }
 
-  /* Services модификаторы */
-  
-  .services__swiper_wrapper {
-    row-gap: 40px;
-  }
-
   /* Scope позиционирование */
 
-  .scope__h2 {
+  .scope__title {
     margin-bottom: 37px;
   }
 
@@ -207,7 +170,7 @@
 
   .scope__block_size {
     width: 368px;
-    height: 251px;
+    height: 250px;
   }
 
   /* Awards позиционирование */
@@ -232,14 +195,22 @@
     margin: 100px 4px;
   }
 
-  .research__wrap {
-    margin-top: 30px;
-    margin-right: 20px;
+  .research__title {
+    margin-bottom: 30px;
+  }
+
+  .research__wrapper {
+    gap: 20px;
   }
 
   /* Research модификаторы */
 
-  .research_h4 {
+  .research__inner_size {
+    width: 360px;
+    height: 300px;
+  }
+
+  .research__text_font-size {
     font-size: 12px;
     line-height: 15px;
   }
@@ -258,7 +229,7 @@
     margin-bottom: 50px;
   }
 
-  .priority__h3 {
+  .priority__subtitle {
     margin-left: 50px;
   }
 
@@ -273,8 +244,12 @@
     padding: 23px 49px;
   }
 
-  .priority__h4_bottom {
-    margin-bottom: 150px;
+  .stages__frame-4_margin-bottom {
+    margin-bottom: 34px;
+  }
+
+  .priority__text_margin-bottom {
+    margin-bottom: 127px;
   }
 
   /* Разделитель */
@@ -295,18 +270,38 @@
     justify-content: flex-start;
   }
 
-  .millenium__text {
+  .millenium__wrapper {
     width: 100%;
     text-align: center;
   }
 
-  .millenium__h4 {
-    margin-top: 30px;
+  .millenium__title {
+    margin-bottom: 15px;
   }
 
   .millenium__form {
     margin-top: 59px;
     margin-left: 74px;
+  }
+
+  /* Millenium модификаторы */
+
+  .content__millenium_padding {
+    padding: 68px 64px;
+  }
+
+  .millenium__title_font-size {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .millenium__title_width {
+    width: 100%;
+  }
+
+  .millenium__text_font-size {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   /* Millenium позиционирование изображений */
@@ -334,21 +329,6 @@
     top: 812px;
   }
 
-  /* Millenium модификаторы */
-
-  .content__millenium_padding {
-    padding: 68px 64px;
-  }
-
-  .millenium__h2_width {
-    width: 100%;
-  }
-
-  .millenium_h4 {
-    font-size: 14px;
-    line-height: 17px;
-  }
-
   /* Footer позиционирование */
 
   .container__footer {
@@ -366,26 +346,36 @@
     padding: 42px 51px 50px 52px;
   }
 
-  .footer_margin1 {
+  .footer__text_font-size {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+
+  .footer__wrapper_margin {
     margin-top: 6px;
     margin-bottom: 18px;
   }
 
-  .footer_margin2 {
+  .footer__wrapper_margin_second {
     margin-top: 29px;
     margin-bottom: 33px;
   }
-
-  .footer_h4 {
-    font-size: 14px;
-    line-height: 17px;
+  
+  .footer__logo_size {
+    width: 156px;
+    height: 55px;
   }
 
   /* display: none; */
 
   .header__menu, .header__contacts, 
-  .header__button, .awards__certificate_second,
-  .stages__desktop {
+  .header__button, .awards__certificate_margin,
+  .desktop, .phone {
     display: none;
+  }
+
+  .delimiter.desktop, .footer__wrapper.phone {
+    display: flex;
   }
 }
