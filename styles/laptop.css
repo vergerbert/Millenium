@@ -24,7 +24,7 @@
     height: 55px;
   }
 
-  .description {
+  .slogan {
     width: 356px;
 
     font-size: 12px;
@@ -36,6 +36,29 @@
     
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .items {
+    width: 368px;
+    height: 250px;
+  }
+
+  .tagline {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .heading {
+    width: 100%;
+
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .footer {
@@ -91,7 +114,7 @@
   /* Header позиционирование */
 
   .container__header {
-    margin: 23px 15px 19px 31px;
+    margin: 23px 20px 19px;
   }
 
   .header__inner {
@@ -120,7 +143,7 @@
     gap: 7px;
   }
 
-  .about-us__description {
+  .about-us__slo.slogan {
     margin-top: 21px;
     margin-bottom: 54px;
   }
@@ -166,13 +189,6 @@
     margin-bottom: 100px;
   }
 
-  /* Scope модификаторы */
-
-  .scope__block_size {
-    width: 368px;
-    height: 250px;
-  }
-
   /* Awards позиционирование */
 
   .awards__gold-bitrix {
@@ -210,11 +226,6 @@
     height: 300px;
   }
 
-  .research__text_font-size {
-    font-size: 12px;
-    line-height: 15px;
-  }
-
   /* Stages позиционирование */
 
   .content__stages {
@@ -248,7 +259,7 @@
     margin-bottom: 34px;
   }
 
-  .priority__text_margin-bottom {
+  .priority__h4_margin-bottom {
     margin-bottom: 127px;
   }
 
@@ -271,11 +282,10 @@
   }
 
   .millenium__wrapper {
-    width: 100%;
     text-align: center;
   }
 
-  .millenium__title {
+  .millenium__heading {
     margin-bottom: 15px;
   }
 
@@ -288,20 +298,6 @@
 
   .content__millenium_padding {
     padding: 68px 64px;
-  }
-
-  .millenium__title_font-size {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .millenium__title_width {
-    width: 100%;
-  }
-
-  .millenium__text_font-size {
-    font-size: 14px;
-    line-height: 17px;
   }
 
   /* Millenium позиционирование изображений */
@@ -369,7 +365,7 @@
 
   /* display: none; */
 
-  .header__menu, .header__contacts, 
+  .header__navigation, .header__contacts, 
   .header__button, .awards__certificate_margin,
   .desktop, .phone {
     display: none;

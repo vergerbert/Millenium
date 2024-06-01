@@ -7,14 +7,13 @@
     line-height: 24px;
   }
 
-  .title, .form__title_font-size {
+  .title, .caption {
     font-size: 18px;
     line-height: 22px;
   }
 
   .subtitle, .h4, .h5, .text,
-  .priority__text_font-size,
-  .millenium__text_font-size {
+  .tagline, .priority__h4_font-size {
     font-size: 12px;
     line-height: 15px;
   }
@@ -32,7 +31,7 @@
     height: 35px;
   }
 
-  .description {
+  .slogan {
     width: 356px;
 
     font-size: 12px;
@@ -51,6 +50,20 @@
 
   .certificate {
     width: 280px;
+  }
+
+  .heading {
+    width: 100%;
+
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .description {
+    width: 341px;
+    
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .footer {
@@ -154,7 +167,7 @@
     right: -58px;
   }
 
-  .about-us__description {
+  .about-us__slogan {
     margin-top: 274px;
     margin-bottom: 50px;
   }
@@ -181,41 +194,41 @@
 
   /* Scope очередность */
 
-  .scope__catalog {
+  .scope_catalog {
     order: 1;
   }
 
-  .scope__catalog_menu {
+  .scope__items_catalog {
     order: 2;
     margin-bottom: 39px;
   }
 
-  .scope__order {
+  .scope_order {
     order: 3;
     margin-bottom: 28px;
   }
 
-  .scope__order_menu {
+  .scope__items_order {
     order: 4;
     margin-bottom: 32px;
   }
 
-  .scope__integration {
+  .scope_integration {
     order: 5;
     margin-bottom: 24px;
   }
 
-  .scope__integration_menu {
+  .scope__items_integration {
     order: 6;
     margin-bottom: 36px;
   }
 
-  .scope__crm {
+  .scope_crm {
     order: 7;
     margin-bottom: 62px;
   }
 
-  .scope__crm_menu {
+  .scope__items_crm {
     order: 8;
   }
 
@@ -270,11 +283,6 @@
     height: 300px;
   }
 
-  .research__text_font-size {
-    font-size: 12px;
-    line-height: 15px;
-  }
-
   /* Stages позиционирование */
 
   .stages__wrapper {
@@ -317,7 +325,7 @@
     margin-bottom: 5px;
   }
 
-  .priority__text_margin-bottom {
+  .priority__h4_margin-bottom {
     margin-bottom: 30px;
   }
 
@@ -342,7 +350,7 @@
     flex-direction: column;
   }
   
-  .millenium__title {
+  .millenium__heading {
     margin: 40px 32px 30px;
   }
 
@@ -351,13 +359,8 @@
     margin-left: 16px;
   }
 
-  .form__title {
+  .form__caption {
     margin-left: 10px;
-  }
-
-  .millenium__text {
-    margin-top: 21px;
-    margin-bottom: 35px;
   }
 
   .millenium__input-box {
@@ -371,21 +374,8 @@
     padding: 0;
   }
 
-  .millenium__title_width {
-    width: 100%;
-  }
-
   .millenium__form_padding {
     padding: 37px 13px 46px;
-  }
-
-  .millenium__title_font-size {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .millenium__text_width {
-    width: 341px;
   }
   
   .millenium__form_button {
@@ -495,7 +485,7 @@
 
   /* display: none; */
 
-  .header__menu, .header__contacts,
+  .header__navigation, .header__contacts,
   .header__button, .spoiler,
   .awards__certificate_margin, .desktop {
     display: none;
