@@ -4,29 +4,96 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/laptop.css">
   <link rel="stylesheet" href="./styles/phone.css">
 
+  <link rel="stylesheet" href="./styles/application.css">
+  <link rel="stylesheet" href="./styles/burger.css">
+
   <title>Millenium</title>
 </head>
 <body>
+  <div class="application">
+    <div class="call-close application__call-close">
+      <img src="./images/close-btn.svg" alt="">
+    </div>
+
+    <div class="application__wrapper">
+      <h3 class="headline application__headline">Заявка на консультацию</h3>
+  
+      <div class="application__inner">
+        <form class="application__form" action="">
+          <div class="box application__box">
+            <h4 class="subject application__subject">Ваше имя</h4>
+            <input class="field application__field" type="text" placeholder="Введите ваше имя">
+          </div>
+  
+          <div class="box application__box">
+            <h4 class="subject application__subject">Номер телефона</h4>
+            <input class="field application__field" type="text" placeholder="+7 (999) 999 99 99">  
+          </div>
+    
+          <button class="button application__button application__button_width" type="button">Отправить</button>
+        </form>
+  
+        <p class="tiny application__tiny application__tiny_color">
+          Нажимая на кнопку «Отправить заявку», я даю согласие на обработку 
+          персональных данных и соглашаюсь c политикой конфиденциальности
+        </p>
+  
+        <div class="book application__book">
+          <img src="./images/book.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="burger">
+    <div class="burger__wrapper">
+      <button class="burger-close burger__burger-close">
+        <img src="./images/close-btn.svg" alt="">
+      </button>
+  
+      <div class="menu burger__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="/">Главная</a></li>
+          <li class="menu__item"><a href="/">Интернет-магазины, которые продают</a></li>
+          <li class="menu__item"><a href="/">Что вы получаете</a></li>
+          <li class="menu__item"><a href="/">Контакты</a></li>
+          <li class="menu__item"><a href="/">Исследуем бизнес</a></li>
+          <li class="menu__item"><a href="/">Этапы</a></li>
+          <li class="menu__item"><a href="/">Обратная связь</a></li>
+        </ul>
+      </div>
+  
+      <div class="connection burger__connection highlight">
+        <ul class="connection__list">
+          <li class="connection__item connection__item_margin-bottom"><a class="highlight" href="/">info@millenium.ru</a></li>
+          <li class="connection__item"><a class="highlight" href="tel:+74957926669">+7 (495) 792-66-69</a></li>
+          <li class="connection__item">пн-пт 10:00-19:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay_burger"></div>
+  <div class="overlay_application"></div>
+
   <div class="container">
     <header class="header container__header">
       <div class="header__wrapper">
-        <div class="header__inner">
-          <button class="burger header__burger">
-            <span class="burger__line burger__line_top"></span>
-            <span class="burger__line burger__line_middle"></span>
-            <span class="burger__line burger__line_bottom"></span>
+        <div class="laptop">
+          <button class="burger-open header__burger-open" type="button">
+            <span class="burger-open__line burger-open__line_top"></span>
+            <span class="burger-open__line burger-open__line_middle"></span>
+            <span class="burger-open__line burger-open__line_bottom"></span>
           </button>
-  
-          <div class="logo header__logo">
-            <a href="/"><img src="./images/logo.svg" alt="Millenium" loading="lazy"></a>
-          </div>
-  
-          <button class="call header__call"><img src="./images/call.svg" alt=""></button>
+        </div>
+
+        <div class="logo header__logo">
+          <a href="/"><img src="./images/logo.svg" alt="Millenium" loading="lazy"></a>
         </div>
 
         <nav class="navigation header__navigation bold">
@@ -48,7 +115,7 @@
           <span class="text">Ежедневно с 09:00 до 18:00</span>
         </div>
 
-        <button class="button header__button header__button_width" type="button">Заказать звонок</button>
+        <button class="button header__button header__button_width call-open" type="button">Заказать звонок</button>
       </div>
     </header>
 
@@ -94,7 +161,7 @@
           </span>
         </h2>
 
-        <div class="swiper services__swiper">
+        <div class="swiper services__swiper slider-1">
           <div class="swiper-wrapper services__inner">
             <div class="swiper-slide">
               <h2 class="numbering">01</h2>
@@ -164,7 +231,7 @@
 
         <div class="services__wrapper">
           <button class="spoiler services__spoiler">
-            <img src="./images/close.svg" alt="Скрыть">
+            <img src="./images/spoiler.svg" alt="Скрыть">
           </button>
           <button class="button" type="button">Узнать стоимость</button>
         </div>
@@ -468,7 +535,10 @@
         </div>
 
         <div class="form  millenium__form millenium__form_padding white-text">
-          <h3 class="caption form__caption">Звоните нам по телефону +7 (495) 792-66-69</h3>
+          <h3 class="caption form__caption">
+            Звоните нам по телефону 
+            <a class="white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
+          </h3>
 
           <p class="text millenium__text">
             или закажите обратный звонок, чтобы получить ответ 
@@ -530,7 +600,7 @@
       </div>
 
       <div class="footer__contacts">
-        <h4 class="footer__text_font-size white-text">+7 (495) 792-66-69</h4>
+        <a class="footer__text_font-size white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
         <h4 class="footer__text_font-size white-text">пн-пт 10:00-19:00</h4>
       </div>
 
@@ -544,5 +614,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

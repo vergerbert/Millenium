@@ -147,17 +147,21 @@
 
   /* Header позиционирование */
 
-  .header__inner {
+  .header__wrapper {
     width: 100%;
-
-    display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .container__header {
     margin-top: 12px;
     margin-bottom: 15px;
+  }
+
+  /* Header модификаторы */
+
+  .header__button_width {
+    width: 62px;
+    height: 38.75px;
   }
 
   /* About Us позиционирование */
@@ -485,8 +489,7 @@
 
   /* display: none; */
 
-  .header__navigation, .header__contacts,
-  .header__button, .spoiler,
+  .navigation, .contacts, .spoiler,
   .awards__certificate_margin, .desktop {
     display: none;
   }

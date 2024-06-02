@@ -6,7 +6,8 @@
 
   /* display: none; */
 
-  button.burger, .call, .laptop, .phone {
+  .burger, 
+  .laptop, .phone {
     display: none;
   }
 }
@@ -41,6 +42,12 @@
 .text {
   font-size: 12px;
   line-height: 15px;
+}
+
+.tiny {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 /* Глобальные Модификаторы */
@@ -122,19 +129,6 @@
 }
 
 /* Декоративные блоки */
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 10;
-}
 
 .button {
   height: 60px;
@@ -251,28 +245,28 @@
 
 /* Кнопка скрытого меню */
 
-.burger {
+.burger-open {
   display: flex;
   flex-direction: column;
   row-gap: 4px;
 }
 
-.burger__line {
+.burger-open__line {
   height: 4px;
 
   border-radius: 1px;
   background: rgb(107, 90, 249);
 }
 
-.burger__line_top {
+.burger-open__line_top {
   width: 41px;
 }
 
-.burger__line_middle {
+.burger-open__line_middle {
   width: 27px;
 }
 
-.burger__line_bottom {
+.burger-open__line_bottom {
   width: 15px;
 }
 
@@ -287,12 +281,7 @@
   width: 100%;
   height: 100%;
 
-  border: none;
-  outline: none;
-
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-
-  color: rgba(255, 255, 255, 0.4);
   background: transparent;
 }
 

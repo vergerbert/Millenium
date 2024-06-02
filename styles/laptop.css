@@ -117,12 +117,16 @@
     margin: 23px 20px 19px;
   }
 
-  .header__inner {
+  .header__wrapper {
     width: 100%;
-
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  /* Header модификаторы */
+
+  .header__button_width {
+    width: 62px;
+    height: 38.75px;
   }
 
   /* Content позиционирование */
@@ -365,8 +369,8 @@
 
   /* display: none; */
 
-  .header__navigation, .header__contacts, 
-  .header__button, .awards__certificate_margin,
+  .navigation, .contacts, 
+  .awards__certificate_margin,
   .desktop, .phone {
     display: none;
   }
