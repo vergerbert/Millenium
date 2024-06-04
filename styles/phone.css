@@ -25,6 +25,9 @@
     padding: 0 10px;
   }
 
+  .swiper {
+    width: 400px !important;
+  }
 
   .logo {
     width: 113px;
@@ -76,6 +79,10 @@
   .background {
     width: 447px;
     height: 299px;
+  }
+
+  .swiper-slide {
+    width: 340px !important;
   }
 
   .awards {
@@ -234,6 +241,13 @@
 
   .scope__items_crm {
     order: 8;
+  }
+
+  /* Services позиционирование */
+
+  .services__inner {
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
   }
 
   /* Awards позиционирование */

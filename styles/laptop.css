@@ -31,6 +31,10 @@
     line-height: 15px;
   }
 
+  .swiper {
+    width: 808px !important;
+  }
+
   .offer {
     width: 287px;
     
@@ -74,7 +78,7 @@
   }
 
   .swiper-slide {
-    width: 364px;
+    width: 364px !important;
   }
 
   .awards {
@@ -163,7 +167,7 @@
   }
 
   .services__swiper {
-    margin-top: 33px;
+    margin-top: 3px;
   }
 
   .services__inner {
