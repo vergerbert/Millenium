@@ -7,7 +7,8 @@
   /* display: none; */
 
   .burger, 
-  .laptop, .phone {
+  .laptop, .phone,
+  .swiper-slide:nth-child(n+4) {
     display: none;
   }
 }
@@ -446,6 +447,12 @@
   margin-bottom: 20px;
 }
 
+/* Services модификаторы */
+
+.services__spoiler_rotate {
+  transform: rotate(180deg);
+}
+
 /* Scope позиционирование */
 
 .scope__title {
@@ -750,6 +757,7 @@
 }
 
 .footer__text_font-size {
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }

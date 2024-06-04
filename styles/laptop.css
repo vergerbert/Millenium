@@ -371,7 +371,8 @@
 
   .navigation, .contacts, 
   .awards__certificate_margin,
-  .desktop, .phone {
+  .desktop, .phone,
+  .swiper-slide:nth-child(n+3) {
     display: none;
   }
 
