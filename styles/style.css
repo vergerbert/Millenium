@@ -75,8 +75,6 @@
 .container {
   width: 1440px;
   padding: 0 140px;
-
-  box-sizing: border-box;
   overflow: hidden;
 }
 
