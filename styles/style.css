@@ -8,7 +8,8 @@
 
   .burger, 
   .laptop, .phone,
-  .swiper-slide:nth-child(n+4) {
+  .services_swiper-slide:nth-child(n+4),
+  .swiper-pagination {
     display: none;
   }
 }
@@ -101,11 +102,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-}
-
-.certificate {
-  width: 231px;
-  text-align: center;
 }
 
 .heading {
@@ -225,7 +221,7 @@
   border: 0.5px solid rgb(107, 90, 249);
 }
 
-/* Кнопка скрытого меню */
+/* Burger */
 
 .burger-open {
   display: flex;
@@ -250,6 +246,55 @@
 
 .burger-open__line_bottom {
   width: 15px;
+}
+
+/* Swiper */
+
+.swiper-1 {
+  overflow: visible;
+}
+
+.swiper-2 {
+  overflow: hidden;
+}
+
+.services_swiper-slide {
+  width: 373px;
+  height: 200px;
+
+  padding: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.numbering {
+  font-size: 64px;
+  line-height: 78px;
+
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination-1 .swiper-pagination-bullet {
+  background-color: rgb(221, 221, 221);
+}
+
+.swiper-pagination-1 .swiper-pagination-bullet-active {
+  background-color: rgb(181, 182, 188);
+}
+
+.swiper-pagination-2 .swiper-pagination-bullet {
+  background-color: rgb(221, 221, 221);
+}
+
+.swiper-pagination-2 .swiper-pagination-bullet-active {
+  background-color: rgb(107, 90, 249);
 }
 
 /* Input Box */
@@ -401,14 +446,29 @@
   margin-bottom: 165px;
 }
 
+.services__swiper {
+  margin-top: 54px;
+}
+
+.services__swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 54px 20px;
+}
+
 .services__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.swiper__stripe {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
 .services__spoiler {
-  margin-top: -5px;
+  margin-top: 25px;
   margin-bottom: 20px;
 }
 
@@ -480,10 +540,14 @@
   z-index: 1;
 }
 
-.awards__certificate {
+.awards__swiper {
   position: absolute;
-  margin-top: 53px;
-  margin-left: 487px;
+  margin: 53px 487px 0;
+}
+
+.awards__swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .certificate__text {
@@ -493,8 +557,13 @@
 
 /* Awards модификаторы */
 
-.awards__certificate_margin {
-  margin-left: 813px;
+.awards__swiper_width {
+  width: 557px;
+}
+
+.awards__swiper-slide_width {
+  width: 231px;
+  text-align: center;
 }
 
 .certificate__title_color {

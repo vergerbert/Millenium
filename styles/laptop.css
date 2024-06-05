@@ -31,10 +31,6 @@
     line-height: 15px;
   }
 
-  .swiper {
-    width: 808px !important;
-  }
-
   .offer {
     width: 287px;
     
@@ -77,8 +73,8 @@
     height: 378px;
   }
 
-  .swiper-slide {
-    width: 364px !important;
+  .services_swiper-slide {
+    width: 364px;
   }
 
   .awards {
@@ -166,12 +162,8 @@
     margin-top: 95px;
   }
 
-  .services__swiper {
-    margin-top: 3px;
-  }
-
-  .services__inner {
-    row-gap: 40px;
+  .services__swiper-wrapper {
+    gap: 40px 20px;
   }
 
   .services__spoiler {
@@ -204,13 +196,27 @@
     margin-left: 286px;
   }
 
-  .awards__certificate {
-    margin-top: 339px;
-    margin-left: 168px;
+  .awards__swiper {
+    margin: 339px 168px 0;
+    padding-bottom: 38px;
+  }
+
+  .awards__swiper-wrapper {
+    justify-content: normal;
   }
 
   .certificate__text {
     margin-bottom: 26px;
+  }
+
+  .awards__swiper-pagination {
+    margin-bottom: -10px;
+  }
+
+  /* Awards модификаторы */
+
+  .awards__swiper_width {
+    width: 429px;
   }
 
   /* Research позиционирование */
@@ -373,10 +379,9 @@
 
   /* display: none; */
 
-  .navigation, .contacts, 
-  .awards__certificate_margin,
+  .navigation, .contacts,
   .desktop, .phone,
-  .swiper-slide:nth-child(n+3) {
+  .services_swiper-slide:nth-child(n+3) {
     display: none;
   }
 

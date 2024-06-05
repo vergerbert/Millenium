@@ -164,9 +164,11 @@
           </span>
         </h2>
 
-        <div class="swiper services__swiper">
-          <div class="swiper-wrapper services__inner services__swiper_slide">
-            <div class="swiper-slide">
+        <div class="swiper services__swiper swiper-1">
+          <div class="swiper-pagination services__swiper-pagination swiper-pagination-1"></div>
+
+          <div class="swiper-wrapper services__swiper-wrapper">
+            <div class="swiper-slide services_swiper-slide">
               <h2 class="numbering">01</h2>
               <h5 class="h5">Удобный интерфейс</h5>
               <div class="stripe swiper__stripe"></div>
@@ -175,7 +177,7 @@
                 понятное меню и легкая навигация по многостраничному сайту.
               </p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide services_swiper-slide">
               <h2 class="numbering">02</h2>
               <h5 class="h5">Продающая структура</h5>
               <div class="stripe swiper__stripe"></div>
@@ -184,7 +186,7 @@
                 Опираясь на анализ прописываем продающуюу структуру сайта.
               </p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide services_swiper-slide">
               <h2 class="numbering">03</h2>
               <h5 class="h5">Адаптивность</h5>
               <div class="stripe swiper__stripe"></div>
@@ -194,7 +196,7 @@
                 что повышает конверсию сайта в покупку.
               </p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide services_swiper-slide">
               <h2 class="numbering">04</h2>
               <h5 class="h5">Уникальный дизайн</h5>
               <div class="stripe swiper__stripe"></div>
@@ -204,7 +206,7 @@
                 который подчеркнет имидж компании.
               </p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide services_swiper-slide">
               <h2 class="numbering">05</h2>
               <h5 class="h5">Защита и безопасность</h5>
               <div class="stripe swiper__stripe"></div>
@@ -213,7 +215,7 @@
                 чтобы данные клиентов были в безопасности.
               </p>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide services_swiper-slide">
               <h2 class="numbering">06</h2>
               <h5 class="h5">SEO оптимизация</h5>
               <div class="stripe swiper__stripe"></div>
@@ -223,8 +225,6 @@
               </p>
             </div>
           </div>
-          
-          <div class="swiper-pagination"></div>
         </div>
 
         <div class="services__wrapper">
@@ -301,16 +301,22 @@
         
         <div class="border awards__border"></div>
 
-        <div class="certificate awards__certificate">
-          <h5 class="text certificate__title_color bold">Сертификат</h5>
-          <p class="text certificate__text certificate__text_width bold">Золотой сертифицированный партнер битрикс</p>
-          <div class="img-certificate"><img src="./images/certificate-1.svg" alt=""></div>
-        </div>
+        <div class="swiper awards__swiper awards__swiper_width swiper-2">
+          <div class="swiper-pagination awards__swiper-pagination swiper-pagination-2"></div>
 
-        <div class="certificate awards__certificate awards__certificate_margin">
-          <h5 class="text certificate__title_color bold">Сертификат</h5>
-          <p class="text certificate__text certificate__text_width bold">Прграммы мониторинга качества внедрений</p>
-          <div class="img-certificate"><img src="./images/certificate-2.svg" alt=""></div>
+          <div class="swiper-wrapper awards__swiper-wrapper">
+            <div class="swiper-slide awards__swiper-slide_width">
+              <h5 class="text certificate__title_color bold">Сертификат</h5>
+              <p class="text certificate__text certificate__text_width bold">Золотой сертифицированный партнер битрикс</p>
+              <img class="img-certificate" src="./images/certificate-1.png" alt="">
+            </div>
+
+            <div class="swiper-slide awards__swiper-slide_width">
+              <h5 class="text certificate__title_color bold">Сертификат</h5>
+              <p class="text certificate__text certificate__text_width bold">Прграммы мониторинга качества внедрений</p>
+              <img class="img-certificate" src="./images/certificate-2.png" alt="">
+            </div>
+          </div>
         </div>
       </section>
 
@@ -615,7 +621,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="js/script.js"></script>
-  <script src="js/swiper.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
