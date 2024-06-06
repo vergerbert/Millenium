@@ -27,3 +27,30 @@ input {
   border: none;
   outline: none;
 }
+
+:root {
+  --purple: rgb(107, 90, 249);
+  --lavender: rgb(155, 143, 255);
+  --lavender-blue: rgb(152, 149, 180);
+  --navy: rgb(42, 35, 103);
+
+  --green: rgb(67, 205, 147);
+  --coral: rgb(227, 117, 117);
+  --yellow: rgb(240, 213, 119);
+
+  --gray: rgb(159, 159, 159);
+  --medium-gray: rgb(126, 126, 126);
+  --silver: rgb(235, 235, 235);
+
+  --light-blue: rgb(244, 248, 255);
+  --white: rgb(255, 255, 255);
+  --white-transparent: rgba(255, 255, 255, 0.4);
+
+  --priotiry: rgba(42, 35, 103, 0.15);
+  --overlay: rgba(0, 0, 0, 0.2);
+  --swiper-slide-1: rgba(0, 0, 0, 0.15);
+  --numbering: rgba(0, 0, 0, 0.25);
+
+  --swiper-pagination-bullet: rgb(221, 221, 221);
+  --swiper-pagination-bullet-active: rgb(181, 182, 188);
+}

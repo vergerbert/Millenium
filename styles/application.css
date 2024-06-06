@@ -11,7 +11,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 10px;
-  background: rgb(255, 255, 255);
+  background: var(--white);
 
   z-index: 20;
 }
@@ -40,7 +40,7 @@
   font-size: 16px;
   line-height: 20px;
 
-  color: rgb(126, 126, 126);
+  color: var(--medium-gray);
 }
 
 .field {
@@ -50,12 +50,12 @@
   box-sizing: border-box;
   padding-bottom: 9px;
 
-  color: rgb(152, 149, 180);
-  border-bottom: 2px solid rgb(152, 149, 180);
+  color: var(--lavender-blue);
+  border-bottom: 2px solid var(--lavender-blue);
 }
 
 .field::placeholder {
-  color: rgb(152, 149, 180);
+  color: var(--lavender-blue);
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -111,7 +111,7 @@
 }
 
 .application__tiny--color {
-  color: rgb(152, 149, 180);
+  color: var(--lavender-blue);
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {

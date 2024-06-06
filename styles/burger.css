@@ -54,11 +54,11 @@
   }
 
   .contacts--highlight {
-    color: rgb(107, 90, 249);
+    color: var(--purple);
   }
 
   .contacts__item--highlight {
-    color: rgb(107, 90, 249);
+    color: var(--purple);
   }
 
   .contacts__list {
@@ -94,7 +94,7 @@
 
   .burger-open__line--bottom.changed {
     width: 41px;
-    background: rgb(67, 205, 147);
+    background: var(--green);
   }
 }
 

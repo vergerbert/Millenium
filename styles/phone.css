@@ -89,7 +89,7 @@
   }
 
   .streak {
-    border: 0.5px solid rgb(235, 235, 235);
+    border: 0.5px solid var(--silver);
   }
 
   .octa {

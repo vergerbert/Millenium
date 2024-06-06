@@ -45,7 +45,7 @@
 /* Глобальные Модификаторы */
 
 .highlight {
-  color: rgb(107, 90, 249);
+  color: var(--purple);
 }
 
 .bold {
@@ -53,7 +53,7 @@
 }
 
 .white-text {
-  color: rgb(255, 255, 255);
+  color: var(--white);
 }
 
 .underline {
@@ -108,7 +108,7 @@
   width: 1440px;
   height: 569px;
 
-  background: rgb(42, 35, 103);
+  background: var(--navy);
 }
 
 /* Декоративные блоки */
@@ -118,7 +118,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--overlay);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -132,8 +132,8 @@
   font-weight: 800;
 
   border-radius: 5px;
-  color: rgb(255, 255, 255);
-  background: rgb(107, 90, 249);
+  color: var(--white);
+  background: var(--purple);
 }
 
 .background {
@@ -145,7 +145,7 @@
   height: 490px;
 
   border-radius: 10px;
-  background-color: rgb(240, 213, 119);
+  background-color: var(--yellow);
 }
 
 .img-certificate {
@@ -157,7 +157,7 @@
   height: 932px;
 
   border-radius: 20px;
-  background: rgb(244, 248, 255);
+  background: var(--light-blue);
 }
 
 .form {
@@ -167,7 +167,7 @@
   text-align: center;
 
   border-radius: 20px;
-  background: rgb(107, 90, 249);
+  background: var(--purple);
 }
 
 /* Декоративные элементы */
@@ -177,7 +177,7 @@
   height: 438px;
 
   border-radius: 10px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid var(--white);
 }
 
 .priority {
@@ -185,8 +185,8 @@
 
   box-shadow: 
     0px 10px 60px 0px 
-    rgba(42, 35, 103, 0.15);
-  background: rgb(255, 255, 255);
+    var(--priority);
+  background: var(--white);
 }
 
 .circle {
@@ -197,24 +197,24 @@
   justify-content: center;
   align-items: center;
 
-  color: rgb(255, 255, 255);
+  color: var(--white);
 
   border-radius: 50%;
-  background-color: rgb(67, 205, 147);
+  background-color: var(--green);
 }
 
 .stripe {
   width: 190px;
-  border: 2px solid rgb(227, 117, 117);
+  border: 2px solid var(--coral);
 }
 
 .streak {
-  border: 1px solid rgb(235, 235, 235);
+  border: 1px solid var(--silver);
 }
 
 .delimiter {
   width: 100%;
-  border: 0.5px solid rgb(107, 90, 249);
+  border: 0.5px solid var(--purple);
 }
 
 /* Burger */
@@ -229,7 +229,7 @@
   height: 4px;
 
   border-radius: 1px;
-  background: rgb(107, 90, 249);
+  background: var(--purple);
 }
 
 .burger-open__line--top {
@@ -260,7 +260,7 @@
 
   padding: 0 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 30px 0px var(--swiper-slider-1);
 }
 
 .swiper-slide-2 {
@@ -272,8 +272,8 @@
   font-size: 64px;
   line-height: 78px;
 
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  text-shadow: 0px 4px 8px var(--numbering);
 }
 
 .swiper-pagination-bullet {
@@ -283,19 +283,19 @@
 }
 
 .swiper-pagination-1 .swiper-pagination-bullet {
-  background-color: rgb(221, 221, 221);
+  background-color: var(--swiper-pagination-bullet);
 }
 
 .swiper-pagination-1 .swiper-pagination-bullet-active {
-  background-color: rgb(181, 182, 188);
+  background-color: var(--swiper-pagination-bullet-active);
 }
 
 .swiper-pagination-2 .swiper-pagination-bullet {
-  background-color: rgb(221, 221, 221);
+  background-color: var(--swiper-pagination-bullet);
 }
 
 .swiper-pagination-2 .swiper-pagination-bullet-active {
-  background-color: rgb(107, 90, 249);
+  background-color: var(--purple);
 }
 
 /* Input Box */
@@ -309,12 +309,12 @@
   width: 100%;
   height: 100%;
 
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2px solid var(--white-transparent);
   background: transparent;
 }
 
 .input-field::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--white-transparent);
 }
 
 /* Checkbox */
@@ -334,7 +334,7 @@
   vertical-align: sub;
 
   border-radius: 2px;
-  background: rgb(155, 143, 255);
+  background: var(--lavender);
 }
 
 .custom-checkbox::before {
@@ -554,7 +554,7 @@
 }
 
 .certificate__title--color {
-  color: rgb(159, 159, 159);
+  color: var(--gray);
 }
 
 /* Research позиционирование */
@@ -694,12 +694,12 @@
 .millenium__button--width {
   width: 341px;
 
-  color: rgb(107, 90, 249);
-  background: rgb(255, 255, 255);
+  color: var(--purple);
+  background: var(--white);
 }
 
 .millenium__text--highlight {
-  color: rgb(155, 143, 255);
+  color: var(--lavender);
 }
 
 /* Millenium позиционирование изображений */
