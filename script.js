@@ -1,40 +1,32 @@
+window.addEventListener('resize', () => {
+  location.reload();
+});
+
 // Слайдеры
 
 const services = document.addEventListener('DOMContentLoaded', () => {
-  const screenWidth = window.innerWidth;
-
-  function initializeSwiper() {
+  if (window.innerWidth === 360) {
     const swiper = new Swiper('.swiper-1', {
       spaceBetween: 10,
       direction: 'horizontal',
       pagination: {
         el: '.swiper-pagination-1', 
         clickable: true
-      },
+      }
     });
-  }
-
-  if (screenWidth === 360) {
-    initializeSwiper();
   }
 });
 
 const awards = document.addEventListener('DOMContentLoaded', () => {
-  const screenWidth = window.innerWidth;
-
-  function initializeSwiper() {
+  if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
     const swiper = new Swiper('.swiper-2', {
       slidesPerView: 1,
       direction: 'horizontal',
       pagination: {
         el: '.swiper-pagination-2', 
         clickable: true
-      },
+      }
     });
-  }
-
-  if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
-    initializeSwiper();
   }
 });
 
