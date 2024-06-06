@@ -81,15 +81,15 @@
     
             <nav class="menu header__menu bold">
               <ul class="menu__list">
-                <li class="menu__item"><a href="/">Главная</a></li>
+                <li data-target="section1" class="menu__item"><a href="/">Главная</a></li>
                 <li class="menu__item desktop"><a href="/">Цены</a></li>
                 <li class="menu__item desktop"><a href="/">Кейсы и отзывы</a></li>
-                <li class="menu__item laptop"><a href="/">Интернет-магазины, которые продают</a></li>
-                <li class="menu__item laptop"><a href="/">Что вы получаете</a></li>
+                <li data-target="section2" class="menu__item laptop"><a href="/">Интернет-магазины, которые продают</a></li>
+                <li data-target="section3" class="menu__item laptop"><a href="/">Что вы получаете</a></li>
                 <li class="menu__item"><a href="/">Контакты</a></li>
-                <li class="menu__item laptop"><a href="/">Исследуем бизнес</a></li>
-                <li class="menu__item laptop"><a href="/">Этапы</a></li>
-                <li class="menu__item laptop"><a href="/">Обратная связь</a></li>
+                <li data-target="section4" class="menu__item laptop"><a href="/">Исследуем бизнес</a></li>
+                <li data-target="section5" class="menu__item laptop"><a href="/">Этапы</a></li>
+                <li data-target="section6" class="menu__item laptop"><a href="/">Обратная связь</a></li>
               </ul>
             </nav>
     
@@ -112,7 +112,7 @@
     </header>
 
     <main class="content container__content">
-      <section class="about-us content__about-us">
+      <section class="about-us content__about-us section section1">
         <div class="background about-us__background">
           <img src="./images/background.svg" alt="">
         </div>
@@ -145,7 +145,7 @@
         </div>
       </section>
 
-      <section class="services content__services">
+      <section class="services content__services section section2">
         <h2 class="title">
           Мы создаём интернет-магазины,
           <span class="highlight">
@@ -224,7 +224,7 @@
         </div>
       </section>
 
-      <section class="scope">
+      <section class="scope section section3">
         <h2 class="title scope__title">Что вы
           <span class="highlight">получаете?</span>
         </h2>
@@ -309,7 +309,7 @@
         </div>
       </section>
 
-      <section class="research content__research">
+      <section class="research content__research section section4">
         <h2 class="title research__title">Исследуем <span class="highlight">бизнес</span></h2>
 
         <div class="research__wrapper">
@@ -343,7 +343,7 @@
         </div>
       </section>
 
-      <section class="stages content__stages">
+      <section class="stages content__stages section section5">
         <h2 class="title">Этапы</h2>
 
         <div class="stages__wrapper">
@@ -506,7 +506,7 @@
         <img src="./images/office.png" alt="">
       </div>
 
-      <section class="millenium content__millenium content__millenium--padding">
+      <section class="millenium content__millenium content__millenium--padding section section6">
         <div class="octa millenium__octa"><img src="./images/octa.svg" alt=""></div>
 
         <div class="millenium__wrapper">
@@ -580,7 +580,7 @@
 
       <div class="delimiter footer__delimiter desktop"></div>
 
-      <div class="footer__wrapper footer__wrapper--margin-2 phone">
+      <div class="footer__wrapper footer__wrapper--margin-2">
         <div class="footer__adress">
           <h4 class="footer__text--font-size bold white-text">Москва,ул. Профсоюзная 76,</h4>
           <h4 class="footer__text--font-size bold white-text">БЦ «ГАЛЕРЕЯ 76» 2 этаж</h4>

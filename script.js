@@ -88,6 +88,29 @@ const burger = document.addEventListener('DOMContentLoaded', () => {
 
   openButton.addEventListener('click', toggleBurger);
   closeButton.addEventListener('click', toggleBurger);
+
+  const items = document.querySelectorAll('.menu__item');
+
+  items.forEach(item => {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const targetId = item.dataset.target;
+      const targetSection = document.querySelector(`.${targetId}`);
+
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth'
+        });
+
+        sidebar.classList.remove('open');
+        overlay.classList.remove('visible');
+        lineBottom.classList.remove('changed');
+        body.classList.remove('no-scroll');
+      }
+    });
+  });
 });
 
 // Изменения кнопок
