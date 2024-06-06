@@ -98,16 +98,7 @@
 /* Модификаторы */
 
 .overlay-1 {
-  position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 10;
 }
 
 .overlay-1.visible {

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   
   <link rel="stylesheet" href="./styles/style.css">
+  
+  <link rel="stylesheet" href="./styles/media.css">
   <link rel="stylesheet" href="./styles/laptop.css">
   <link rel="stylesheet" href="./styles/phone.css">
 
@@ -17,7 +19,7 @@
 
   <title>Millenium</title>
 </head>
-<body>
+<body class="body">
   <div class="application">
     <div class="call-close application__call-close">
       <img src="./images/close-btn.svg" alt="">
@@ -53,36 +55,8 @@
     </div>
   </div>
 
-  <div class="burger">
-    <div class="burger__wrapper">
-      <button class="burger-close burger__burger-close">
-        <img src="./images/close-btn.svg" alt="">
-      </button>
-  
-      <div class="menu burger__menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="/">Главная</a></li>
-          <li class="menu__item"><a href="/">Интернет-магазины, которые продают</a></li>
-          <li class="menu__item"><a href="/">Что вы получаете</a></li>
-          <li class="menu__item"><a href="/">Контакты</a></li>
-          <li class="menu__item"><a href="/">Исследуем бизнес</a></li>
-          <li class="menu__item"><a href="/">Этапы</a></li>
-          <li class="menu__item"><a href="/">Обратная связь</a></li>
-        </ul>
-      </div>
-  
-      <div class="connection burger__connection highlight">
-        <ul class="connection__list">
-          <li class="connection__item connection__item--margin-bottom"><a class="highlight" href="/">info@millenium.ru</a></li>
-          <li class="connection__item"><a class="highlight" href="tel:+74957926669">+7 (495) 792-66-69</a></li>
-          <li class="connection__item">пн-пт 10:00-19:00</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="overlay-1"></div>
-  <div class="overlay-2"></div>
+  <div class="overlay overlay-1"></div>
+  <div class="overlay overlay-2"></div>
 
   <div class="container">
     <header class="header container__header">
@@ -99,23 +73,38 @@
           <a href="/"><img src="./images/logo.svg" alt="Millenium" loading="lazy"></a>
         </div>
 
-        <nav class="navigation header__navigation bold">
-          <ul class="h5 header__list">
-            <li><a href="/">Главная</a></li>
-            <li><a href="/">Цены</a></li>
-            <li><a href="/">Кейсы и отзывы</a></li>
-            <li><a href="/">Контакты</a></li>
-          </ul>
-        </nav>
-
-        <div class="contacts header__contacts">
-          <ul class="subtitle contacts__list">
-            <li><a href="/"><img src="./images/telegram.svg" alt="Telegram"></a></li>
-            <li><a href="/"><img src="./images/whatsapp.svg" alt="Whatsapp"></a></li>
-            <li><a href="tel:+74955556565">+7 (495) 555 65 65</a></li>
-          </ul>
-
-          <span class="text">Ежедневно с 09:00 до 18:00</span>
+        <div class="burger">
+          <div class="burger__wrapper">
+            <button class="burger-close burger__burger-close laptop">
+              <img src="./images/close-btn.svg" alt="">
+            </button>
+    
+            <nav class="menu header__menu bold">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="/">Главная</a></li>
+                <li class="menu__item desktop"><a href="/">Цены</a></li>
+                <li class="menu__item desktop"><a href="/">Кейсы и отзывы</a></li>
+                <li class="menu__item laptop"><a href="/">Интернет-магазины, которые продают</a></li>
+                <li class="menu__item laptop"><a href="/">Что вы получаете</a></li>
+                <li class="menu__item"><a href="/">Контакты</a></li>
+                <li class="menu__item laptop"><a href="/">Исследуем бизнес</a></li>
+                <li class="menu__item laptop"><a href="/">Этапы</a></li>
+                <li class="menu__item laptop"><a href="/">Обратная связь</a></li>
+              </ul>
+            </nav>
+    
+            <div class="contacts header__contacts contacts--highlight header__contacts--margin-bottom">
+              <ul class="contacts__list">
+                <li class="contacts__item desktop"><a href="/"><img src="./images/telegram.svg" alt="Telegram"></a></li>
+                <li class="contacts__item desktop"><a href="/"><img src="./images/whatsapp.svg" alt="Whatsapp"></a></li>
+                <li class="contacts__item contacts__item--margin-bottom laptop"><a class="highlight" href="/">info@millenium.ru</a></li>
+                <li class="contacts__item"><a class="contacts__item--highlight" href="tel:+74955556565">+7 (495) 555 65 65</a></li>
+                <li class="contacts__item laptop">пн-пт 10:00-19:00</li>
+              </ul>
+    
+              <span class="text desktop">Ежедневно с 09:00 до 18:00</span>
+            </div>
+          </div>
         </div>
 
         <button class="button header__button header__button--width call-open" type="button">Заказать звонок</button>
@@ -301,7 +290,7 @@
         
         <div class="border awards__border"></div>
 
-        <div class="swiper awards__swiper awards__swiper--width swiper-2">
+        <div class="swiper awards__swiper awards__swiper--padding awards__swiper--width swiper-2">
           <div class="swiper-pagination awards__swiper-pagination swiper-pagination-2"></div>
 
           <div class="swiper-wrapper awards__swiper-wrapper">
@@ -521,7 +510,7 @@
         <div class="octa millenium__octa"><img src="./images/octa.svg" alt=""></div>
 
         <div class="millenium__wrapper">
-          <h2 class="heading millenium__heading">Компания Millenium-</h2>
+          <h2 class="title heading millenium__heading">Компания Millenium-</h2>
 
           <p class="description millenium__description">
             Это дорогая и долгая разработка интернет-магазинов на 1С Битрикс!
@@ -593,8 +582,8 @@
 
       <div class="footer__wrapper footer__wrapper--margin-2 phone">
         <div class="footer__adress">
-          <h4 class="footer__text--font-size white-text">Москва,ул. Профсоюзная 76,</h4>
-          <h4 class="footer__text--font-size white-text">БЦ «ГАЛЕРЕЯ 76» 2 этаж</h4>
+          <h4 class="footer__text--font-size bold white-text">Москва,ул. Профсоюзная 76,</h4>
+          <h4 class="footer__text--font-size bold white-text">БЦ «ГАЛЕРЕЯ 76» 2 этаж</h4>
         </div>
 
         <div class="footer__social">
@@ -604,8 +593,8 @@
       </div>
 
       <div class="footer__contacts">
-        <a class="footer__text--font-size white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
-        <h4 class="footer__text--font-size white-text">пн-пт 10:00-19:00</h4>
+        <a class="footer__text--font-size bold white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
+        <h4 class="footer__text--font-size bold white-text">пн-пт 10:00-19:00</h4>
       </div>
 
       <div class="footer__logo footer__logo--size">

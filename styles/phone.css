@@ -13,37 +13,27 @@
   }
 
   .subtitle, .h4, .h5, .text,
-  .tagline, .priority__h4_font-size {
+  .tagline, .priority__h4_font-size,
+  .description {
     font-size: 12px;
     line-height: 15px;
   }
 
-  /* Глобальные блоки */
-
-  .container {
-    width: 360px;
-    padding: 0 10px;
+  .offer {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
   }
+
+  /* Глобальные блоки */
 
   .logo {
     width: 113px;
     height: 35px;
   }
 
-  .slogan {
-    width: 356px;
-
-    font-size: 12px;
-    line-height: 15px;
-  }
-
   .offer {
     width: 340px;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-
     text-align: center;
   }
 
@@ -51,18 +41,8 @@
     width: 280px;
   }
 
-  .heading {
-    width: 100%;
-
-    font-size: 24px;
-    line-height: 29px;
-  }
-
   .description {
     width: 341px;
-    
-    font-size: 12px;
-    line-height: 15px;
   }
 
   .footer {
@@ -146,21 +126,8 @@
 
   /* Header позиционирование */
 
-  .header__wrapper {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .container__header {
-    margin-top: 12px;
-    margin-bottom: 15px;
-  }
-
-  /* Header модификаторы */
-
-  .header__button--width {
-    width: 62px;
-    height: 38.75px;
+    margin: 12px 0 15px;
   }
 
   /* About Us позиционирование */
@@ -171,13 +138,11 @@
   }
 
   .about-us__slogan {
-    margin-top: 274px;
-    margin-bottom: 50px;
+    margin: 274px 0 50px;
   }
 
   .about-us__button {
-    margin-left: 32px;
-    margin-bottom: 9px;
+    margin: 0 32px 9px;
   }
 
   /* Scope позиционирование */
@@ -186,12 +151,7 @@
     margin: 0;
   }
 
-  .scope__list {
-    margin-top: 17px;
-  }
-
   .scope__button {
-    margin-bottom: 50px;
     margin-bottom: 88px;
   }
 
@@ -253,23 +213,19 @@
   /* Awards позиционирование */
 
   .awards__gold-bitrix {
-    margin-top: 38px;
-    margin-left: 121px;
+    margin: 38px 121px 0;
   }
 
   .awards__border {
-    margin-top: 19px;
-    margin-left: 17px;
+    margin: 19px 17px 0;
   }
   
   .awards__swiper {
     margin: 177px 30px 0;
-    padding-bottom: 38px;
   }
 
   .certificate__text {
-    margin-left: 34px;
-    margin-bottom: 24px;
+    margin: 0 34px 24px;
   }
 
   /* Awards модификаторы */
@@ -285,12 +241,7 @@
   /* Research позиционирование */
 
   .content__research {
-    margin-top: 107px;
-    margin-bottom: 70px;
-  }
-
-  .research__title {
-    margin-bottom: 30px;
+    margin: 107px 0 70px;
   }
 
   .research__wrapper {
@@ -311,13 +262,8 @@
     margin-top: 30px;
   }
 
-  .stages__priority {
-    margin-bottom: 50px;
-  }
-
   .priority__streak {
-    margin-top: 24px;
-    margin-bottom: 14px;
+    margin: 24px 0 14px;
   }
   
   .priority__subtitle {
@@ -377,8 +323,7 @@
   }
 
   .millenium__form {
-    margin-top: 30px;
-    margin-left: 16px;
+    margin: 30px 16px 0;
   }
 
   .form__caption {
@@ -386,8 +331,7 @@
   }
 
   .millenium__input-box {
-    margin-left: 10px;
-    margin-bottom: 40px;
+    margin: 0 10px 40px;
   }
 
   /* Millenium модификаторы */
@@ -407,35 +351,26 @@
   /* Millenium позиционирование изображений */
 
   .millenium__octa {
-    position: absolute;
-  
     top: -62px;
     left: -10px;
   }
   
   .millenium__cylinder {
-    position: absolute;
-  
     top: -39px;
     right: -33px;
   }
   
   .millenium__confetti {
-    position: absolute;
-  
     top: 655px;
     right: 278px;
   }
   
   .millenium__cube {
-    position: absolute;
-  
     top: 763px;
     right: -10px;
   }
   
   .millenium__hand {
-    position: absolute;
     left: 0;
     top: 810px;
   }
@@ -443,8 +378,7 @@
   /* Footer позиционирование */
 
   .container__footer {
-    margin-top: 150px;
-    margin-left: -10px;
+    margin: 150px -10px 0;
   }
 
   .footer__title {
@@ -460,8 +394,7 @@
   }
 
   .footer__delimiter {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
   }
 
   .footer__adress {
@@ -482,11 +415,6 @@
     padding: 27px 10px 48px;
   }
 
-  .footer__text--font-size {
-    font-size: 14px;
-    line-height: 17px;
-  }
-
   .footer__button--width {
     width: 275px;
   }
@@ -499,15 +427,9 @@
     margin-bottom: 28px;
   }
 
-  .footer__logo--size {
-    width: 156px;
-    height: 55px;
-  }
-
   /* display: none; */
-
-  .navigation, .contacts, 
-  .spoiler, .desktop {
+ 
+  .spoiler {
     display: none;
   }
 

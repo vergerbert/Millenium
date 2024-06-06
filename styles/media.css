@@ -1,0 +1,88 @@
+@media (min-width: 1440px) {
+
+  /* display: none; */
+ 
+  .laptop, .phone,
+  .swiper-slide-1:nth-child(n+4),
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1439px) {
+
+  /* Блоки */
+  .container {
+    padding: 0 10px;
+  }
+
+  .slogan {
+    width: 356px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .heading {
+    width: 100%;
+
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* Header позиционирование */
+
+  .header__wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Header модификаторы */
+
+  .header__button--width {
+    width: 62px;
+    height: 38.75px;
+  }
+
+  /* Scope Позиционирование */
+
+  .scope__list {
+    margin-top: 17px;
+  }
+
+  /* Awards модификаторы */
+
+  .awards__swiper--padding {
+    padding-bottom: 38px;
+  }
+
+  /* Research позиционирование */
+
+  .research__title {
+    margin-bottom: 30px;
+  }
+
+  /* Stages позиционирование */
+
+  .stages__priority {
+    margin-bottom: 50px;
+  }
+
+  /* Footer модификаторы */
+
+  .footer__text--font-size {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer__logo--size {
+    width: 156px;
+    height: 55px;
+  }
+
+  /* display: none; */
+
+  .desktop {
+    display: none;
+  }
+}

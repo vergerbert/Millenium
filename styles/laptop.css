@@ -12,30 +12,30 @@
     line-height: 29px;
   }
 
-  /* Глобальные блоки */
-
-  .container {
-    width: 768px;
-    padding: 0 10px;
+  .tagline {
+    font-size: 12px;
+    line-height: 15px;
   }
+
+  .description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .offer {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* Глобальные блоки */
 
   .logo {
     width: 177px;
     height: 55px;
   }
 
-  .slogan {
-    width: 356px;
-
-    font-size: 12px;
-    line-height: 15px;
-  }
-
   .offer {
     width: 287px;
-    
-    font-size: 12px;
-    line-height: 16px;
   }
 
   .items {
@@ -43,22 +43,8 @@
     height: 250px;
   }
 
-  .tagline {
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  .heading {
-    width: 100%;
-
-    font-size: 24px;
-    line-height: 29px;
-  }
-
   .description {
     width: 100%;
-    font-size: 14px;
-    line-height: 17px;
   }
 
   .footer {
@@ -84,10 +70,6 @@
   .gold-bitrix {
     width: 185px;
     height: 226px;
-  }
-
-  .certificate {
-    width: 429px;
   }
 
   .img-certificate {
@@ -117,18 +99,6 @@
     margin: 23px 20px 19px;
   }
 
-  .header__wrapper {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  /* Header модификаторы */
-
-  .header__button--width {
-    width: 62px;
-    height: 38.75px;
-  }
-
   /* Content позиционирование */
 
   .container__content {
@@ -148,8 +118,7 @@
   }
 
   .about-us__slogan {
-    margin-top: 21px;
-    margin-bottom: 54px;
+    margin: 21px 0 54px;
   }
 
   .about-us__button {
@@ -180,25 +149,18 @@
     row-gap: 67px;
   }
 
-  .scope__list {
-    margin-top: 17px;
-  }
-
   .scope__button {
-    margin-top: 85px;
-    margin-bottom: 100px;
+    margin: 85px 0 100px;
   }
 
   /* Awards позиционирование */
 
   .awards__gold-bitrix {
-    margin-top: 70px;
-    margin-left: 286px;
+    margin: 70px 286px 0;
   }
 
   .awards__swiper {
     margin: 339px 168px 0;
-    padding-bottom: 38px;
   }
 
   .awards__swiper-wrapper {
@@ -225,10 +187,6 @@
     margin: 100px 4px;
   }
 
-  .research__title {
-    margin-bottom: 30px;
-  }
-
   .research__wrapper {
     gap: 20px;
   }
@@ -248,10 +206,6 @@
 
   .stages__wrapper {
     margin: 30px 36px 0 36px;
-  }
-
-  .stages__priority {
-    margin-bottom: 50px;
   }
 
   .priority__subtitle {
@@ -304,8 +258,7 @@
   }
 
   .millenium__form {
-    margin-top: 59px;
-    margin-left: 74px;
+    margin: 59px 74px 0;
   }
 
   /* Millenium модификаторы */
@@ -342,8 +295,7 @@
   /* Footer позиционирование */
 
   .container__footer {
-    margin-top: 250px;
-    margin-left: -10px;
+    margin: 250px -10px 0;
   }
 
   .footer__logo {
@@ -356,33 +308,22 @@
     padding: 42px 51px 50px 52px;
   }
 
-  .footer__text--font-size {
-    font-size: 14px;
-    line-height: 17px;
-  }
-
-
   .footer__wrapper--margin {
     margin: 6px 0 18px;
   }
 
   .footer__wrapper--margin-2 {
-    margin-top: 29px;
-    margin-bottom: 33px;
-  }
-  
-  .footer__logo--size {
-    width: 156px;
-    height: 55px;
+    margin: 29px 0 33px;
   }
 
   /* display: none; */
 
-  .navigation, .contacts,
-  .desktop, .phone,
-  .services_swiper-slide:nth-child(n+3) {
+  .phone,
+  .swiper-slide-1:nth-child(n+3) {
     display: none;
   }
+
+  /* display: flex; */
 
   .delimiter.desktop, .footer__wrapper.phone {
     display: flex;
