@@ -5,9 +5,10 @@ window.addEventListener('resize', () => {
 // Слайдеры
 
 const services = document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth === 360) {
+  if (window.innerWidth >= 360 && window.innerWidth <= 767) {
     const swiper = new Swiper('.swiper-1', {
-      spaceBetween: 10,
+      slidesPerView: 1,
+      spaceBetween: 60,
       direction: 'horizontal',
       pagination: {
         el: '.swiper-pagination-1', 
