@@ -2,7 +2,7 @@
 
   /* Блоки */
 
-  .overlay_burger {
+  .overlay-2 {
     position: fixed;
     top: 98px;
     left: 0;
@@ -15,7 +15,7 @@
     z-index: 10;
   }
   
-  .overlay_burger.visible {
+  .overlay-2.visible {
     opacity: 1;
     visibility: visible;
   }
@@ -72,15 +72,15 @@
 
   /* Модификаторы */
 
-  .connection__item_margin-bottom {
+  .connection__item--margin-bottom {
     margin-bottom: 36px;
   }
 
-  .burger-open__line_bottom {
+  .burger-open__line--bottom {
     transition: width 0.3s, background 0.3s;
   }
 
-  .burger-open__line_bottom.changed {
+  .burger-open__line--bottom.changed {
     width: 41px;
     background: rgb(67, 205, 147);
   }

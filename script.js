@@ -1,47 +1,39 @@
 const services = document.addEventListener('DOMContentLoaded', () => {
+  const screenWidth = window.innerWidth;
+
   function initializeSwiper() {
-    if (window.innerWidth === 360) {
-      const swiper = new Swiper('.swiper-1', {
-        spaceBetween: 10,
-        direction: 'horizontal',
-        pagination: {
-          el: '.swiper-pagination-1', 
-          clickable: true
-        },
-      });
-    }
+    const swiper = new Swiper('.swiper-1', {
+      spaceBetween: 10,
+      direction: 'horizontal',
+      pagination: {
+        el: '.swiper-pagination-1', 
+        clickable: true
+      },
+    });
   }
 
-  initializeSwiper();
-
-  window.addEventListener('resize', function () {
-    if (window.innerWidth === 360) {
-      initializeSwiper();
-    }
-  });
+  if (screenWidth === 360) {
+    initializeSwiper();
+  }
 });
 
 const awards = document.addEventListener('DOMContentLoaded', () => {
+  const screenWidth = window.innerWidth;
+
   function initializeSwiper() {
-    if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
-      const swiper = new Swiper('.swiper-2', {
-        slidesPerView: 1,
-        direction: 'horizontal',
-        pagination: {
-          el: '.swiper-pagination-2', 
-          clickable: true
-        },
-      });
-    }
+    const swiper = new Swiper('.swiper-2', {
+      slidesPerView: 1,
+      direction: 'horizontal',
+      pagination: {
+        el: '.swiper-pagination-2', 
+        clickable: true
+      },
+    });
   }
 
-  initializeSwiper();
-
-  window.addEventListener('resize', function () {
-    if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
-      initializeSwiper();
-    }
-  });
+  if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
+    initializeSwiper();
+  }
 });
 
 const call = document.addEventListener('DOMContentLoaded', () => {
@@ -66,7 +58,7 @@ const application = document.addEventListener('DOMContentLoaded', () => {
   const openButton = document.querySelector('.call-open');
   const closeButton = document.querySelector('.call-close');
   const form = document.querySelector('.application');
-  const overlay = document.querySelector('.overlay_application');
+  const overlay = document.querySelector('.overlay-1');
 
   openButton.addEventListener('click', () => {
     form.classList.add('show');
@@ -83,8 +75,8 @@ const burger = document.addEventListener('DOMContentLoaded', () => {
   const openButton = document.querySelector('.burger-open');
   const closeButton = document.querySelector('.burger-close');
   const sidebar = document.querySelector('.burger');
-  const overlay = document.querySelector('.overlay_burger');
-  const lineBottom = document.querySelector('.burger-open__line_bottom')
+  const overlay = document.querySelector('.overlay-2');
+  const lineBottom = document.querySelector('.burger-open__line--bottom')
 
   function toggleBurger() {
     const isOpen = sidebar.classList.contains('open');
@@ -106,15 +98,15 @@ const burger = document.addEventListener('DOMContentLoaded', () => {
 });
 
 const spoiler = document.querySelector('.spoiler').addEventListener('click', () => {
-  const slides = document.querySelectorAll('.services__swiper-wrapper .services_swiper-slide');
+  const slides = document.querySelectorAll('.services__swiper-wrapper .swiper-slide-1');
   const button = document.querySelector('.spoiler');
 
-  const spoilerIcon = button.classList.contains('services__spoiler_rotate');
+  const spoilerIcon = button.classList.contains('services__spoiler--rotate');
 
   if (spoilerIcon) {
-    button.classList.remove('services__spoiler_rotate');
+    button.classList.remove('services__spoiler--rotate');
   } else {
-    button.classList.add('services__spoiler_rotate');
+    button.classList.add('services__spoiler--rotate');
   }
 
   if (window.innerWidth >= 768 && window.innerWidth <= 1439) {

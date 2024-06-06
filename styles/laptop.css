@@ -73,7 +73,7 @@
     height: 378px;
   }
 
-  .services_swiper-slide {
+  .swiper-slide-1 {
     width: 364px;
   }
 
@@ -124,7 +124,7 @@
 
   /* Header модификаторы */
 
-  .header__button_width {
+  .header__button--width {
     width: 62px;
     height: 38.75px;
   }
@@ -147,7 +147,7 @@
     gap: 7px;
   }
 
-  .about-us__slo.slogan {
+  .about-us__slogan {
     margin-top: 21px;
     margin-bottom: 54px;
   }
@@ -215,7 +215,7 @@
 
   /* Awards модификаторы */
 
-  .awards__swiper_width {
+  .awards__swiper--width {
     width: 429px;
   }
 
@@ -235,7 +235,7 @@
 
   /* Research модификаторы */
 
-  .research__inner_size {
+  .research__inner--size {
     width: 360px;
     height: 300px;
   }
@@ -265,15 +265,15 @@
 
   /* Stages модификаторы */
 
-  .stages__priority_padding {
+  .stages__priority--padding {
     padding: 23px 49px;
   }
 
-  .stages__frame-4_margin-bottom {
+  .stages__frame-4--margin-bottom {
     margin-bottom: 34px;
   }
 
-  .priority__h4_margin-bottom {
+  .priority__h4--margin-bottom {
     margin-bottom: 127px;
   }
 
@@ -310,7 +310,7 @@
 
   /* Millenium модификаторы */
 
-  .content__millenium_padding {
+  .content__millenium--padding {
     padding: 68px 64px;
   }
 
@@ -352,27 +352,26 @@
 
   /* Footer модификаторы */
 
-  .container__footer_padding {
+  .container__footer--padding {
     padding: 42px 51px 50px 52px;
   }
 
-  .footer__text_font-size {
+  .footer__text--font-size {
     font-size: 14px;
     line-height: 17px;
   }
 
 
-  .footer__wrapper_margin {
-    margin-top: 6px;
-    margin-bottom: 18px;
+  .footer__wrapper--margin {
+    margin: 6px 0 18px;
   }
 
-  .footer__wrapper_margin_second {
+  .footer__wrapper--margin-2 {
     margin-top: 29px;
     margin-bottom: 33px;
   }
   
-  .footer__logo_size {
+  .footer__logo--size {
     width: 156px;
     height: 55px;
   }

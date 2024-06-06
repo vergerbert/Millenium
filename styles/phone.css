@@ -158,7 +158,7 @@
 
   /* Header модификаторы */
 
-  .header__button_width {
+  .header__button--width {
     width: 62px;
     height: 38.75px;
   }
@@ -197,41 +197,41 @@
 
   /* Scope очередность */
 
-  .scope_catalog {
+  .scope--catalog {
     order: 1;
   }
 
-  .scope__items_catalog {
+  .scope__items--catalog {
     order: 2;
     margin-bottom: 39px;
   }
 
-  .scope_order {
+  .scope--order {
     order: 3;
     margin-bottom: 28px;
   }
 
-  .scope__items_order {
+  .scope__items--order {
     order: 4;
     margin-bottom: 32px;
   }
 
-  .scope_integration {
+  .scope--integration {
     order: 5;
     margin-bottom: 24px;
   }
 
-  .scope__items_integration {
+  .scope__items--integration {
     order: 6;
     margin-bottom: 36px;
   }
 
-  .scope_crm {
+  .scope--crm {
     order: 7;
     margin-bottom: 62px;
   }
 
-  .scope__items_crm {
+  .scope__items--crm {
     order: 8;
   }
 
@@ -274,11 +274,11 @@
 
   /* Awards модификаторы */
 
-  .awards__swiper_width {
+  .awards__swiper--width {
     width: 280px;
   }
 
-  .certificate__text_width {
+  .certificate__text--width {
     width: 212px;
   }
 
@@ -300,7 +300,7 @@
 
   /* Research модификаторы */
 
-  .research__inner_size {
+  .research__inner--size {
     width: 340px;
     height: 300px;
   }
@@ -330,24 +330,24 @@
   
   /* Stages модификаторы */
 
-  .stages__priority_padding {
+  .stages__priority--padding {
     padding: 23px 13px;
   }
 
-  .stages__frame-1_margin-bottom,
-  .stages__frame-2_margin-bottom {
+  .stages__frame-1--margin-bottom,
+  .stages__frame-2--margin-bottom {
     margin-bottom: 2px;
   }
 
-  .stages__frame-3_margin-bottom {
+  .stages__frame-3--margin-bottom {
     margin-bottom: 23px;
   }
 
-  .stages__frame-4_margin-bottom {
+  .stages__frame-4--margin-bottom {
     margin-bottom: 5px;
   }
 
-  .priority__h4_margin-bottom {
+  .priority__h4--margin-bottom {
     margin-bottom: 30px;
   }
 
@@ -392,15 +392,15 @@
 
   /* Millenium модификаторы */
 
-  .content__millenium_padding {
+  .content__millenium--padding {
     padding: 0;
   }
 
-  .millenium__form_padding {
+  .millenium__form--padding {
     padding: 37px 13px 46px;
   }
   
-  .millenium__form_button {
+  .millenium__button--width {
     width: 268px;
   }
 
@@ -478,29 +478,28 @@
 
   /* Footer модификаторы */
 
-  .container__footer_padding {
+  .container__footer--padding {
     padding: 27px 10px 48px;
   }
 
-  .footer__text_font-size {
+  .footer__text--font-size {
     font-size: 14px;
     line-height: 17px;
   }
 
-  .footer__button_width {
+  .footer__button--width {
     width: 275px;
   }
 
-  .footer__wrapper_margin {
-    margin-top: 11px;
-    margin-bottom: 30px;
+  .footer__wrapper--margin {
+    margin: 11px 0 30px;
   }
 
-  .footer__wrapper_margin_second {
+  .footer__wrapper--margin-2 {
     margin-bottom: 28px;
   }
 
-  .footer__logo_size {
+  .footer__logo--size {
     width: 156px;
     height: 55px;
   }

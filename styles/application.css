@@ -97,7 +97,7 @@
 
 /* Модификаторы */
 
-.overlay_application {
+.overlay-1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -110,16 +110,16 @@
   z-index: 10;
 }
 
-.overlay_application.visible {
+.overlay-1.visible {
   opacity: 1;
   visibility: visible;
 }
 
-.application__button_width {
+.application__button--width {
   width: 374px;
 }
 
-.application__tiny_color {
+.application__tiny--color {
   color: rgb(152, 149, 180);
 }
 
@@ -186,7 +186,7 @@
 
   /* Модификаторы */
 
-  .application__button_width {
+  .application__button--width {
     width: 310px;
   }
 }

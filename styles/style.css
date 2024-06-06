@@ -73,7 +73,7 @@
 /* Глобальные блоки */
 
 .container {
-  width: 1440px;
+  width: 1920px;
   padding: 0 140px;
   overflow: hidden;
 }
@@ -234,15 +234,15 @@
   background: rgb(107, 90, 249);
 }
 
-.burger-open__line_top {
+.burger-open__line--top {
   width: 41px;
 }
 
-.burger-open__line_middle {
+.burger-open__line--middle {
   width: 27px;
 }
 
-.burger-open__line_bottom {
+.burger-open__line--bottom {
   width: 15px;
 }
 
@@ -256,13 +256,18 @@
   overflow: hidden;
 }
 
-.services_swiper-slide {
+.swiper-slide-1 {
   width: 373px;
   height: 200px;
 
   padding: 0 15px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-slide-2 {
+  width: 231px;
+  text-align: center;
 }
 
 .numbering {
@@ -398,7 +403,7 @@
 
 /* Header модификаторы */
 
-.header__button_width {
+.header__button--width {
   width: 180px;
 }
 
@@ -472,7 +477,7 @@
 
 /* Services модификаторы */
 
-.services__spoiler_rotate {
+.services__spoiler--rotate {
   transform: rotate(180deg);
 }
 
@@ -555,16 +560,11 @@
 
 /* Awards модификаторы */
 
-.awards__swiper_width {
+.awards__swiper--width {
   width: 557px;
 }
 
-.awards__swiper-slide_width {
-  width: 231px;
-  text-align: center;
-}
-
-.certificate__title_color {
+.certificate__title--color {
   color: rgb(159, 159, 159);
 }
 
@@ -590,7 +590,7 @@
 
 /* Research модификаторы */
 
-.research__inner_size {
+.research__inner--size {
   width: 544px;
   height: 440px;
 }
@@ -629,24 +629,24 @@
 
 /* Stages модификаторы */
 
-.stages__priority_padding {
+.stages__priority--padding {
   padding: 23px 85px;
 }
 
-.stages__frame-1_margin-bottom,
-.stages__frame-2_margin-bottom {
+.stages__frame-1--margin-bottom,
+.stages__frame-2--margin-bottom {
   margin-bottom: 72px;
 }
 
-.stages__frame-3_margin-bottom {
+.stages__frame-3--margin-bottom {
   margin-bottom: 7px;
 }
 
-.stages__frame-4_margin-bottom {
+.stages__frame-4--margin-bottom {
   margin-bottom: 28px;
 }
 
-.priority__h4_margin-bottom {
+.priority__h4--margin-bottom {
   margin-bottom: 215px;
 }
 
@@ -696,23 +696,23 @@
 
 /* Millenium модификаторы */
 
-.content__millenium_padding {
+.content__millenium--padding {
   position: relative;
   padding: 41px 98px;
 }
 
-.millenium__form_padding {
+.millenium__form--padding {
   padding: 56px 56px 47px 57px;
 }
 
-.millenium__form_button {
+.millenium__button--width {
   width: 341px;
 
   color: rgb(107, 90, 249);
   background: rgb(255, 255, 255);
 }
 
-.millenium__text_highlight {
+.millenium__text--highlight {
   color: rgb(155, 143, 255);
 }
 
@@ -784,31 +784,30 @@
 
 /* Footer модификаторы */
 
-.container__footer_padding {
+.container__footer--padding {
   padding: 75px 140px 58px 140px;
 }
 
-.footer__text_font-size {
+.footer__text--font-size {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
 
-.footer__button_width {
+.footer__button--width {
   width: 341px;
 }
 
-.footer__wrapper_margin {
-  margin-top: 30px;
-  margin-bottom: 32px;
+.footer__wrapper--margin {
+  margin: 30px 0 32px;
 }
 
-.footer__wrapper_margin_second {
+.footer__wrapper--margin-2 {
   margin-top: 14px;
   margin-bottom: 24px;
 }
 
-.footer__logo_size {
+.footer__logo--size {
   width: 161px;
   height: 55px;
 }

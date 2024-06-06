@@ -38,10 +38,10 @@
             <input class="field application__field" type="text" placeholder="+7 (999) 999 99 99">  
           </div>
     
-          <button class="button application__button application__button_width" type="button">Отправить</button>
+          <button class="button application__button application__button--width" type="button">Отправить</button>
         </form>
   
-        <p class="tiny application__tiny application__tiny_color">
+        <p class="tiny application__tiny application__tiny--color">
           Нажимая на кнопку «Отправить заявку», я даю согласие на обработку 
           персональных данных и соглашаюсь c политикой конфиденциальности
         </p>
@@ -73,7 +73,7 @@
   
       <div class="connection burger__connection highlight">
         <ul class="connection__list">
-          <li class="connection__item connection__item_margin-bottom"><a class="highlight" href="/">info@millenium.ru</a></li>
+          <li class="connection__item connection__item--margin-bottom"><a class="highlight" href="/">info@millenium.ru</a></li>
           <li class="connection__item"><a class="highlight" href="tel:+74957926669">+7 (495) 792-66-69</a></li>
           <li class="connection__item">пн-пт 10:00-19:00</li>
         </ul>
@@ -81,17 +81,17 @@
     </div>
   </div>
 
-  <div class="overlay_burger"></div>
-  <div class="overlay_application"></div>
+  <div class="overlay-1"></div>
+  <div class="overlay-2"></div>
 
   <div class="container">
     <header class="header container__header">
       <div class="header__wrapper">
         <div class="laptop">
           <button class="burger-open header__burger-open" type="button">
-            <span class="burger-open__line burger-open__line_top"></span>
-            <span class="burger-open__line burger-open__line_middle"></span>
-            <span class="burger-open__line burger-open__line_bottom"></span>
+            <span class="burger-open__line burger-open__line--top"></span>
+            <span class="burger-open__line burger-open__line--middle"></span>
+            <span class="burger-open__line burger-open__line--bottom"></span>
           </button>
         </div>
 
@@ -118,7 +118,7 @@
           <span class="text">Ежедневно с 09:00 до 18:00</span>
         </div>
 
-        <button class="button header__button header__button_width call-open" type="button">Заказать звонок</button>
+        <button class="button header__button header__button--width call-open" type="button">Заказать звонок</button>
       </div>
     </header>
 
@@ -168,7 +168,7 @@
           <div class="swiper-pagination services__swiper-pagination swiper-pagination-1"></div>
 
           <div class="swiper-wrapper services__swiper-wrapper">
-            <div class="swiper-slide services_swiper-slide">
+            <div class="swiper-slide swiper-slide-1">
               <h2 class="numbering">01</h2>
               <h5 class="h5">Удобный интерфейс</h5>
               <div class="stripe swiper__stripe"></div>
@@ -177,7 +177,7 @@
                 понятное меню и легкая навигация по многостраничному сайту.
               </p>
             </div>
-            <div class="swiper-slide services_swiper-slide">
+            <div class="swiper-slide swiper-slide-1">
               <h2 class="numbering">02</h2>
               <h5 class="h5">Продающая структура</h5>
               <div class="stripe swiper__stripe"></div>
@@ -186,7 +186,7 @@
                 Опираясь на анализ прописываем продающуюу структуру сайта.
               </p>
             </div>
-            <div class="swiper-slide services_swiper-slide">
+            <div class="swiper-slide swiper-slide-1">
               <h2 class="numbering">03</h2>
               <h5 class="h5">Адаптивность</h5>
               <div class="stripe swiper__stripe"></div>
@@ -196,7 +196,7 @@
                 что повышает конверсию сайта в покупку.
               </p>
             </div>
-            <div class="swiper-slide services_swiper-slide">
+            <div class="swiper-slide swiper-slide-1">
               <h2 class="numbering">04</h2>
               <h5 class="h5">Уникальный дизайн</h5>
               <div class="stripe swiper__stripe"></div>
@@ -206,7 +206,7 @@
                 который подчеркнет имидж компании.
               </p>
             </div>
-            <div class="swiper-slide services_swiper-slide">
+            <div class="swiper-slide swiper-slide-1">
               <h2 class="numbering">05</h2>
               <h5 class="h5">Защита и безопасность</h5>
               <div class="stripe swiper__stripe"></div>
@@ -215,7 +215,7 @@
                 чтобы данные клиентов были в безопасности.
               </p>
             </div>
-            <div class="swiper-slide services_swiper-slide">
+            <div class="swiper-slide swiper-slide-1">
               <h2 class="numbering">06</h2>
               <h5 class="h5">SEO оптимизация</h5>
               <div class="stripe swiper__stripe"></div>
@@ -228,7 +228,7 @@
         </div>
 
         <div class="services__wrapper">
-          <button class="spoiler services__spoiler services__spoiler_rotate">
+          <button class="spoiler services__spoiler services__spoiler--rotate">
             <img src="./images/spoiler.svg" alt="Скрыть">
           </button>
           <button class="button" type="button">Узнать стоимость</button>
@@ -241,9 +241,9 @@
         </h2>
 
         <div class="scope__wrapper">
-          <div class="items scope_catalog"><img src="./images/catalog.svg" alt=""></div>
+          <div class="items scope--catalog"><img src="./images/catalog.svg" alt=""></div>
 
-          <div class="items scope__items scope__items_catalog">
+          <div class="items scope__items scope__items--catalog">
             <h4 class="h4 highlight">Каталог товаров</h4>
             <ul class="h5 scope__list">
               <li class="scope__item">возможность выгружать свои товары в неограниченном количестве</li>
@@ -253,7 +253,7 @@
             </ul>
           </div>
   
-          <div class="items scope__items scope__items_order">
+          <div class="items scope__items scope__items--order">
             <h4 class="h4 highlight">Оформление заказа</h4>
             <ul class="h5 scope__list">
               <li class="scope__item">личный кабинет</li>
@@ -264,11 +264,11 @@
             </ul>
           </div>
   
-          <div class="items scope_order"><img src="./images/order.svg" alt=""></div>
+          <div class="items scope--order"><img src="./images/order.svg" alt=""></div>
   
-          <div class="items scope_integration"><img src="./images/integration.svg" alt=""></div>
+          <div class="items scope--integration"><img src="./images/integration.svg" alt=""></div>
   
-          <div class="items scope__items scope__items_integration">
+          <div class="items scope__items scope__items--integration">
             <h4 class="h4 highlight">Интеграции</h4>
             <ul class="h5 scope__list">
               <li class="scope__item">1С, Мой склад (выгрузка товаров на сайт, полная синхронизация)</li>
@@ -277,7 +277,7 @@
             </ul>
           </div>
   
-          <div class="items scope__items scope__items_crm">
+          <div class="items scope__items scope__items--crm">
             <h4 class="h4 highlight">CRM</h4>
             <ul class="h5 scope__list">
               <li class="scope__item">фиксация и отслеживание поступивших заявок</li>
@@ -286,7 +286,7 @@
             </ul>
           </div>
   
-          <div class="items scope_crm"><img src="./images/crm.svg" alt=""></div>
+          <div class="items scope--crm"><img src="./images/crm.svg" alt=""></div>
         </div>
 
         <div class="scope__inner">
@@ -301,19 +301,19 @@
         
         <div class="border awards__border"></div>
 
-        <div class="swiper awards__swiper awards__swiper_width swiper-2">
+        <div class="swiper awards__swiper awards__swiper--width swiper-2">
           <div class="swiper-pagination awards__swiper-pagination swiper-pagination-2"></div>
 
           <div class="swiper-wrapper awards__swiper-wrapper">
-            <div class="swiper-slide awards__swiper-slide_width">
-              <h5 class="text certificate__title_color bold">Сертификат</h5>
-              <p class="text certificate__text certificate__text_width bold">Золотой сертифицированный партнер битрикс</p>
+            <div class="swiper-slide swiper-slide-2">
+              <h5 class="text certificate__title--color bold">Сертификат</h5>
+              <p class="text certificate__text certificate__text--width bold">Золотой сертифицированный партнер битрикс</p>
               <img class="img-certificate" src="./images/certificate-1.png" alt="">
             </div>
 
-            <div class="swiper-slide awards__swiper-slide_width">
-              <h5 class="text certificate__title_color bold">Сертификат</h5>
-              <p class="text certificate__text certificate__text_width bold">Прграммы мониторинга качества внедрений</p>
+            <div class="swiper-slide swiper-slide-2">
+              <h5 class="text certificate__title--color bold">Сертификат</h5>
+              <p class="text certificate__text certificate__text--width bold">Прграммы мониторинга качества внедрений</p>
               <img class="img-certificate" src="./images/certificate-2.png" alt="">
             </div>
           </div>
@@ -324,7 +324,7 @@
         <h2 class="title research__title">Исследуем <span class="highlight">бизнес</span></h2>
 
         <div class="research__wrapper">
-          <div class="research__inner research__inner_size">
+          <div class="research__inner research__inner--size">
             <p class="tagline research__tagline">
               Каждый клиент – своя история. Мы не берем шаблонные решения, 
               а исследуем рынок конкретно под ваши цели и задачи.
@@ -358,7 +358,7 @@
         <h2 class="title">Этапы</h2>
 
         <div class="stages__wrapper">
-          <div class="priority stages__priority stages__priority_padding">
+          <div class="priority stages__priority stages__priority--padding">
             <div class="subtitle stages__subtitle">
               <h3 class="circle">1</h3>
               <h3 class="priority__subtitle">Маркетинговый анализ бизнеса</h3>
@@ -379,16 +379,16 @@
               Также мы создаем набор готовых элементов для пользовательского интерфейса.
             </p>
 
-            <div class="stages__image stages__frame-1_margin-bottom desktop">
+            <div class="stages__image stages__frame-1--margin-bottom desktop">
               <img src="./images/frame-1.png" alt="">
             </div>
 
-            <div class="stages__image stages__frame-1_margin-bottom laptop">
+            <div class="stages__image stages__frame-1--margin-bottom laptop">
               <img src="./images/frame-1-2.svg" alt="">
             </div>
           </div>
 
-          <div class="priority stages__priority stages__priority_padding">
+          <div class="priority stages__priority stages__priority--padding">
             <div class="subtitle stages__subtitle">
               <h3 class="circle">2</h3>
               <h3 class="priority__subtitle">Привлекательный дизайн</h3>
@@ -408,16 +408,16 @@
               уделим внимание четкости графики, наглядности интерфейса, понятной и лаконичной визуализации.
             </p>
 
-            <div class="stages__image stages__frame-2_margin-bottom desktop">
+            <div class="stages__image stages__frame-2--margin-bottom desktop">
               <img src="./images/frame-2.png" alt="">
             </div>
 
-            <div class="stages__image stages__frame-2_margin-bottom laptop">
+            <div class="stages__image stages__frame-2--margin-bottom laptop">
               <img src="./images/frame-2-2.svg" alt="">
             </div>
           </div>
 
-          <div class="priority stages__priority stages__priority_padding">
+          <div class="priority stages__priority stages__priority--padding">
             <div class="subtitle stages__subtitle">
               <h3 class="circle">3</h3>
               <h3 class="priority__subtitle">Профессиональная верстка</h3>
@@ -437,16 +437,16 @@
               надежной работы сайта на протяжении длительного времени. 
             </p>
 
-            <div class="stages__image stages__frame-3_margin-bottom desktop">
+            <div class="stages__image stages__frame-3--margin-bottom desktop">
               <img src="./images/frame-3.png" alt="">
             </div>
 
-            <div class="stages__image stages__frame-3_margin-bottom laptop">
+            <div class="stages__image stages__frame-3--margin-bottom laptop">
               <img src="./images/frame-3-2.svg" alt="">
             </div>
           </div>
 
-          <div class="priority stages__priority stages__priority_padding">
+          <div class="priority stages__priority stages__priority--padding">
             <div class="subtitle stages__subtitle">
               <h3 class="circle">4</h3>
               <h3 class="priority__subtitle">«Посадка» на CMS</h3>
@@ -467,16 +467,16 @@
               множество других действий, которые без CMS были бы сущим кошмаром.
             </p>
 
-            <div class="stages__image stages__frame-4_margin-bottom desktop">
+            <div class="stages__image stages__frame-4--margin-bottom desktop">
               <img src="./images/frame-4.png" alt="">
             </div>
 
-            <div class="stages__image stages__frame_-4margin-bottom laptop">
+            <div class="stages__image stages__frame-4--margin-bottom laptop">
               <img src="./images/frame-4-2.svg" alt="">
             </div>
           </div>
           
-          <div class="priority stages__priority stages__priority_padding">
+          <div class="priority stages__priority stages__priority--padding">
             <div class="subtitle stages__subtitle">
               <h3 class="circle">5</h3>
               <h3 class="priority__subtitle">Тестирование и доработка</h3>
@@ -484,7 +484,7 @@
             
             <div class="streak priority__streak"></div>
 
-            <p class="h4 priority__h4 priority__h4_margin-bottom">
+            <p class="h4 priority__h4 priority__h4--margin-bottom">
               Чтобы избежать проблем во время использования сайта, на данном этапе мы 
               отрабатываем все возможные сценарии взаимодействия пользователей с сайтом. 
               Это позволяет вовремя выявить ошибки и устранить их. Мы тестируем usability и 
@@ -494,7 +494,7 @@
             </p>
           </div>
 
-          <div class="priority stages__priority stages__priority_padding">
+          <div class="priority stages__priority stages__priority--padding">
             <div class="subtitle stages__subtitle">
               <h3 class="circle">6</h3>
               <h3 class="priority__subtitle">Запуск сайта</h3>
@@ -502,7 +502,7 @@
             
             <div class="streak priority__streak"></div>
 
-            <p class="h4 priority__h4 priority__h4_margin-bottom">
+            <p class="h4 priority__h4 priority__h4--margin-bottom">
               Когда все проверено и выполнены все нужные доработки, остается лишь выполнить 
               грамотный запуск сайта. Наши специалисты сверяют всё по чек-листу, чтобы избежать 
               неприятностей и получить на выходе идеальный интернет-магазин с высокой конверсией. 
@@ -517,7 +517,7 @@
         <img src="./images/office.png" alt="">
       </div>
 
-      <section class="millenium content__millenium content__millenium_padding">
+      <section class="millenium content__millenium content__millenium--padding">
         <div class="octa millenium__octa"><img src="./images/octa.svg" alt=""></div>
 
         <div class="millenium__wrapper">
@@ -538,7 +538,7 @@
           </p>
         </div>
 
-        <div class="form  millenium__form millenium__form_padding white-text">
+        <div class="form  millenium__form millenium__form--padding white-text">
           <h3 class="caption form__caption">
             Звоните нам по телефону 
             <a class="white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
@@ -557,7 +557,7 @@
               <input class="input-field millenium__input-field" type="text" placeholder="+7 (999) 999 99 99">  
             </div>
 
-            <button class="button millenium__button millenium__form_button" type="button">Перезвоните мне</button>
+            <button class="button millenium__button millenium__button--width" type="button">Перезвоните мне</button>
 
             <div class="text">
               <label class="millenium__label">
@@ -565,7 +565,7 @@
                 <span class="custom-checkbox"></span>
 
                 <span>
-                  <span class="millenium__text_highlight">Согласен/а на</span> 
+                  <span class="millenium__text--highlight">Согласен/а на</span> 
                   обработку персональных данных
                 </span>
               </label>
@@ -580,21 +580,21 @@
       </section>
     </main>
 
-    <footer class="footer container__footer container__footer_padding">
+    <footer class="footer container__footer container__footer--padding">
       <h2 class="title footer__title white-text">Напишите нам</h2>
 
-      <div class="footer__wrapper footer__wrapper_margin">
+      <div class="footer__wrapper footer__wrapper--margin">
         <h1 class="h1 highlight">info@millenium.ru</h1>
         <div class="delimiter footer__delimiter phone"></div>
-        <button class="button footer__button footer__button_width">Заказать звонок</button>
+        <button class="button footer__button footer__button--width">Заказать звонок</button>
       </div>
 
       <div class="delimiter footer__delimiter desktop"></div>
 
-      <div class="footer__wrapper footer__wrapper_margin_second phone">
+      <div class="footer__wrapper footer__wrapper--margin-2 phone">
         <div class="footer__adress">
-          <h4 class="footer__text_font-size white-text">Москва,ул. Профсоюзная 76,</h4>
-          <h4 class="footer__text_font-size white-text">БЦ «ГАЛЕРЕЯ 76» 2 этаж</h4>
+          <h4 class="footer__text--font-size white-text">Москва,ул. Профсоюзная 76,</h4>
+          <h4 class="footer__text--font-size white-text">БЦ «ГАЛЕРЕЯ 76» 2 этаж</h4>
         </div>
 
         <div class="footer__social">
@@ -604,11 +604,11 @@
       </div>
 
       <div class="footer__contacts">
-        <a class="footer__text_font-size white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
-        <h4 class="footer__text_font-size white-text">пн-пт 10:00-19:00</h4>
+        <a class="footer__text--font-size white-text" href="tel:+74957926669">+7 (495) 792-66-69</a>
+        <h4 class="footer__text--font-size white-text">пн-пт 10:00-19:00</h4>
       </div>
 
-      <div class="footer__logo footer__logo_size">
+      <div class="footer__logo footer__logo--size">
         <a href="/"><img src="./images/logo2.svg" alt="Millenium" loading="lazy"></a>
       </div>
 
