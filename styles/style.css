@@ -260,7 +260,7 @@
 
   padding: 0 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 30px 0px var(--swiper-slider-1);
+  box-shadow: 0px 0px 30px 0px var(--swiper-slide-1);
 }
 
 .swiper-slide-2 {
