@@ -270,6 +270,12 @@
     margin-top: 30px;
   }
 
+  .stages__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .priority__streak {
     margin: 24px 0 14px;
   }
@@ -448,8 +454,7 @@
 
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
-  
+@media (min-width: 361px) and (max-width: 767px) {
 }
 
 @media (min-width: 485px) and (max-width: 767px) {
