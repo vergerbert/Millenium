@@ -63,10 +63,6 @@
     width: 364px;
   }
 
-  .awards {
-    height: 1125px;
-  }
-
   .gold-bitrix {
     width: 185px;
     height: 226px;
@@ -84,13 +80,6 @@
   .scheme {
     width: 370px;
     height: 308px;
-  }
-
-  /* Декоративные элементы */
-
-  .border {
-    width: 712px;
-    height: 1067px;
   }
 
   /* Header позиционирование */
@@ -156,23 +145,11 @@
   /* Awards позиционирование */
 
   .awards__gold-bitrix {
-    margin: 70px 286px 0;
-  }
-
-  .awards__swiper {
-    margin: 339px 168px 0;
-  }
-
-  .awards__swiper-wrapper {
-    justify-content: normal;
+    margin: 44px auto;
   }
 
   .certificate__text {
     margin-bottom: 26px;
-  }
-
-  .awards__swiper-pagination {
-    margin-bottom: -10px;
   }
 
   /* Awards модификаторы */

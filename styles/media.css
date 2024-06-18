@@ -50,10 +50,24 @@
     margin-top: 17px;
   }
 
+  /* Awards позиционирование */
+
+  .awards__border {
+    padding: 0;
+  }
+
+  .awards__gold-bitrix {
+    position: static;
+  }
+
+  .awards__swiper-pagination {
+    margin-bottom: 15px;
+  }
+
   /* Awards модификаторы */
 
   .awards__swiper--padding {
-    padding-bottom: 38px;
+    padding-bottom: 70px;
   }
 
   /* Research позиционирование */

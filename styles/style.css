@@ -142,8 +142,6 @@
 }
 
 .awards {
-  height: 490px;
-
   border-radius: 10px;
   background-color: var(--yellow);
 }
@@ -173,9 +171,6 @@
 /* Декоративные элементы */
 
 .border {
-  width: 1120px;
-  height: 438px;
-
   border-radius: 10px;
   border: 1px solid var(--white);
 }
@@ -521,21 +516,19 @@
 
 /* Awards позиционирование */
 
-.awards__gold-bitrix {
-  position: absolute;
-  margin: 39px 34px 0;
-  z-index: 2;
+.content__awards {
+  padding: 26px 20px;
 }
 
 .awards__border {
-  position: absolute;
-  margin: 26px 20px 0;
-  z-index: 1;
+  position: relative;
+  padding: 27px 96px 19px 467px;
 }
 
-.awards__swiper {
+.awards__gold-bitrix {
   position: absolute;
-  margin: 53px 487px 0;
+  top: 14px;
+  left: 13px;
 }
 
 .awards__swiper-wrapper {
