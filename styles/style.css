@@ -67,7 +67,7 @@
 /* Глобальные блоки */
 
 .container {
-  width: 1440px;
+  width: 100%;
   padding: 0 140px;
   overflow: hidden;
 }
