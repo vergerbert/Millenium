@@ -2,11 +2,9 @@
 
 .application {
   position: absolute;
-  top: -510px;
-  left: 337px;
+  top: -540px;
 
   width: 766px;
-  height: 510px;
 
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -15,6 +13,7 @@
 
   z-index: 20;
 }
+
 
 .application__wrapper {
   padding: 27px 190px;
@@ -114,38 +113,17 @@
   color: var(--lavender-blue);
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-
-  /* Блоки */
-
-  .application {
-    width: 532px;
-
-    top: 133px;
-    left: 118px;
-  }
-
-  .application__wrapper {
-    padding: 27px 74px;
-  }
-
-  /* Позиционирование */
-
-  .application__call-close {
-    right: 12px;
-  }
-}
-
 @media (min-width: 360px) and (max-width: 767px) {
 
   /* Блоки */
 
   .application {
     width: 340px;
-    height: 514px;
+    top: -551px;
+  }
 
+  .application.show {
     top: 133px;
-    left: 10px;
   }
 
   .application__wrapper {
@@ -179,5 +157,28 @@
 
   .application__button--width {
     width: 310px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  /* Блоки */
+
+  .application {
+    width: 532px;
+  }
+
+  .application.show {
+    top: 133px;
+  }
+
+  .application__wrapper {
+    padding: 27px 74px;
+  }
+
+  /* Позиционирование */
+
+  .application__call-close {
+    right: 12px;
   }
 }
