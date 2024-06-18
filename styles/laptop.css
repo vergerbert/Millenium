@@ -7,7 +7,7 @@
     line-height: 35px;
   }
 
-  .title, .subtitle {
+  .subtitle {
     font-size: 24px;
     line-height: 29px;
   }
@@ -15,11 +15,6 @@
   .tagline {
     font-size: 12px;
     line-height: 15px;
-  }
-
-  .description {
-    font-size: 14px;
-    line-height: 17px;
   }
 
   .offer {
@@ -39,12 +34,7 @@
   }
 
   .items {
-    width: 368px;
-    height: 250px;
-  }
-
-  .description {
-    width: 100%;
+    width: 50%;
   }
 
   .footer {
@@ -70,10 +60,6 @@
   .img-certificate {
     width: 429px;
     height: 607px;
-  }
-
-  .millenium {
-    height: 1050px;
   }
 
   .scheme {
@@ -159,14 +145,9 @@
   }
 
   .research__wrapper {
-    gap: 20px;
-  }
-
-  /* Research модификаторы */
-
-  .research__inner--size {
-    width: 360px;
-    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0;
   }
 
   /* Stages позиционирование */
@@ -211,6 +192,72 @@
 
   .content__img-delimiter {
     margin: 100px -176px 100px;
+  }
+
+  /* Footer позиционирование */
+
+  .container__footer {
+    margin: 250px -10px 0;
+  }
+
+  .footer__logo {
+    margin: 37px auto 31px;
+  }
+
+  /* Footer модификаторы */
+
+  .container__footer--padding {
+    padding: 42px 51px 50px 52px;
+  }
+
+  .footer__holder--margin {
+    margin: 6px 0 18px;
+  }
+
+  .footer__holder--margin-2 {
+    margin: 29px 0 33px;
+  }
+
+  /* display: none; */
+
+  .phone {
+    display: none;
+  }
+
+  /* display: flex; */
+
+  .delimiter.desktop, .footer__holder.phone {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1151px) {
+  .swiper-slide-1:nth-child(n+3) {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1179px) {
+
+  /* Размеры шрифтов */
+
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* Глобальные блоки */
+
+  .description {
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .millenium {
+    height: 1050px;
   }
 
   /* Millenium позиционирование */
@@ -258,41 +305,16 @@
   .millenium__hand {
     top: 812px;
   }
+}
 
-  /* Footer позиционирование */
+@media (min-width: 1000px) and (max-width: 1439px) {
 
-  .container__footer {
-    margin: 250px -10px 0;
+  .tagline {
+    font-size: 16px;
+    line-height: 20px;
   }
 
-  .footer__logo {
-    margin: 37px auto 31px;
-  }
-
-  /* Footer модификаторы */
-
-  .container__footer--padding {
-    padding: 42px 51px 50px 52px;
-  }
-
-  .footer__holder--margin {
-    margin: 6px 0 18px;
-  }
-
-  .footer__holder--margin-2 {
-    margin: 29px 0 33px;
-  }
-
-  /* display: none; */
-
-  .phone,
-  .swiper-slide-1:nth-child(n+3) {
-    display: none;
-  }
-
-  /* display: flex; */
-
-  .delimiter.desktop, .footer__holder.phone {
-    display: flex;
+  .scope__wrapper {
+    width: 88%;
   }
 }

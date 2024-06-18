@@ -139,7 +139,7 @@ const spoiler = document.querySelector('.spoiler').addEventListener('click', () 
     button.classList.add('services__spoiler--rotate');
   }
 
-  if (window.innerWidth >= 768 && window.innerWidth <= 1439) {
+  if (window.innerWidth >= 768 && window.innerWidth <= 1151) {
     let visible = slides[2].style.display === 'block';
 
     for (let i = 2; i < slides.length; i++) {

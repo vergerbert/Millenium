@@ -151,6 +151,7 @@
 }
 
 .millenium {
+  width: 1160px;
   height: 738px;
 
   border-radius: 20px;
@@ -449,6 +450,7 @@
 .services__swiper-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 54px 20px;
 }
 
@@ -513,6 +515,12 @@
   margin: 100px 0 150px;
 }
 
+  /* Scope модификаторы */
+
+  .scope__wrapper--margin {
+    margin: 0 auto;
+  }
+
 /* Awards позиционирование */
 
 .content__awards {
@@ -571,14 +579,19 @@
 /* Research модификаторы */
 
 .research__inner--size {
-  width: 544px;
-  height: 440px;
+  width: 50%;
 }
 
 /* Stages позиционирование */
 
 .stages__wrapper {
   margin-top: 63px;
+}
+
+.stages__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stages__priority {
@@ -640,6 +653,10 @@
 }
 
 /* Millenium позиционирование */
+
+.content__millenium {
+  margin: 0 auto;
+}
 
 .millenium__wrapper {
   display: flex;

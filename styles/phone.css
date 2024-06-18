@@ -150,6 +150,10 @@
 
   /* Scope позиционирование */
 
+  .scope__wrapper {
+    justify-content: center;
+  }
+
   .scope__title {
     margin: 0;
   }
@@ -206,6 +210,7 @@
 
   .services__swiper-wrapper {
     flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 0;
   }
   
@@ -260,19 +265,12 @@
 
   .research__inner--size {
     width: 100%;
-    height: 300px;
   }
 
   /* Stages позиционирование */
 
   .stages__wrapper {
     margin-top: 30px;
-  }
-
-  .stages__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .priority__streak {
