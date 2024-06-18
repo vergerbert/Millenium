@@ -48,7 +48,6 @@
   }
 
   .footer {
-    width: 768px;
     height: 506px;
   }
 
@@ -276,11 +275,11 @@
     padding: 42px 51px 50px 52px;
   }
 
-  .footer__wrapper--margin {
+  .footer__holder--margin {
     margin: 6px 0 18px;
   }
 
-  .footer__wrapper--margin-2 {
+  .footer__holder--margin-2 {
     margin: 29px 0 33px;
   }
 
@@ -293,7 +292,7 @@
 
   /* display: flex; */
 
-  .delimiter.desktop, .footer__wrapper.phone {
+  .delimiter.desktop, .footer__holder.phone {
     display: flex;
   }
 }
