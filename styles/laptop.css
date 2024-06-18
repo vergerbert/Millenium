@@ -74,7 +74,7 @@
   }
 
   .millenium {
-    height: 1015px;
+    height: 1050px;
   }
 
   .scheme {
@@ -99,11 +99,6 @@
   .about-us__background {
     top: -24px;
     right: -83px;
-  }
-
-  .about-us__title {
-    flex-direction: row;
-    gap: 7px;
   }
 
   .about-us__slogan {
@@ -221,12 +216,7 @@
 
   /* Millenium позиционирование */
 
-  .content__millenium {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .millenium__wrapper {
+  .millenium__inner {
     text-align: center;
   }
 
@@ -257,12 +247,13 @@
 
   .millenium__confetti {
     top: 751px;
-    right: 654px;
+    right: 0;
+    left: 52px;
   }
 
   .millenium__cube {
     top: 850px;
-    left: 610px;
+    right: 19px;
   }
 
   .millenium__hand {

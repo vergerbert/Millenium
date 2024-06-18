@@ -152,7 +152,7 @@
 }
 
 .millenium {
-  height: 932px;
+  height: 738px;
 
   border-radius: 20px;
   background: var(--light-blue);
@@ -642,12 +642,12 @@
 
 /* Millenium позиционирование */
 
-.content__millenium {
+.millenium__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.millenium__wrapper {
+.millenium__inner {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -715,7 +715,7 @@
   position: absolute;
 
   top: 540px;
-  right: 590px;
+  left: 512px;
 }
 
 .millenium__cube {

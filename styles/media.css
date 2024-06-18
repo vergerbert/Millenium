@@ -11,7 +11,7 @@
 
 @media (min-width: 360px) and (max-width: 1439px) {
 
-  /* Блоки */
+  /* Глобальные Блоки */
   
   .container {
     padding: 0 10px;
@@ -83,6 +83,14 @@
     margin-bottom: 50px;
   }
 
+  /* Millenium позиционирование */
+
+  .millenium__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   /* Footer модификаторы */
 
   .footer__text--font-size {
@@ -99,5 +107,16 @@
 
   .desktop {
     display: none;
+  }
+}
+
+@media (min-width: 485px) and (max-width: 1439px) {
+  .scope__wrapper {
+    justify-content: center;
+  }
+
+  .about-us__title {
+    flex-direction: row;
+    gap: 5px;
   }
 }

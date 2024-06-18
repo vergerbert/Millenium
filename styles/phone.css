@@ -45,8 +45,17 @@
     width: 280px;
   }
 
+  .scheme {
+    width: 370px;
+    height: 308px;
+  }
+
   .description {
-    width: 341px;
+    width: 100%;
+  }
+
+  .millenium {
+    height: 932px;
   }
 
   .footer {
@@ -72,7 +81,7 @@
   }
 
   .form {
-    width: 311px;
+    width: 94%;
     height: 486px;
   }
 
@@ -244,10 +253,14 @@
     gap: 19px;
   }
 
+  .research__scheme {
+    margin: 0 auto;
+  }
+
   /* Research модификаторы */
 
   .research__inner--size {
-    width: 340px;
+    width: 100%;
     height: 300px;
   }
 
@@ -304,25 +317,25 @@
   }
 
   /* Millenium позиционирование */
-
-  .content__millenium {
-    justify-content: flex-start;
-  }
-
-  .content__millenium {
-    flex-direction: column;
-  }
   
-  .millenium__heading {
-    margin: 40px 32px 30px;
+
+  .millenium__inner {
+    text-align: center;
   }
 
-  .millenium__form {
-    margin: 30px 16px 0;
+  .millenium__heading {
+    margin: 40px 0 30px;
+  }
+
+  .millenium__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .form__caption {
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .millenium__input-box {
@@ -333,6 +346,10 @@
 
   .content__millenium--padding {
     padding: 0;
+  }
+
+  .millenium__inner--padding {
+    padding: 0 10px;
   }
 
   .millenium__form--padding {
@@ -356,8 +373,9 @@
   }
   
   .millenium__confetti {
-    top: 655px;
-    right: 278px;
+    top: 680px;
+    right: 0;
+    left: 20px;
   }
   
   .millenium__cube {
@@ -428,4 +446,19 @@
     display: none;
   }
 
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  
+}
+
+@media (min-width: 485px) and (max-width: 767px) {
+
+  .form {
+    width: 435px;
+  }
+
+  .millenium__inner--padding {
+    padding: 0 40px;
+  }
 }
