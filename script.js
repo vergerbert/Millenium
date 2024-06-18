@@ -8,7 +8,8 @@ const services = document.addEventListener('DOMContentLoaded', () => {
   if (window.innerWidth >= 360 && window.innerWidth <= 767) {
     const swiper = new Swiper('.swiper-1', {
       slidesPerView: 1,
-      spaceBetween: 60,
+      spaceBetween: 230,
+      centeredSlides: true,
       direction: 'horizontal',
       pagination: {
         el: '.swiper-pagination-1', 

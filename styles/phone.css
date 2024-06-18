@@ -37,6 +37,10 @@
     text-align: center;
   }
 
+  .swiper {
+    width: 340px;
+  }
+
   .certificate {
     width: 280px;
   }
