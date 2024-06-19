@@ -1,4 +1,4 @@
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1180px) and (max-width: 1920px) {
 
   /* display: none; */
  
@@ -15,13 +15,52 @@
   }
 }
 
+@media (min-width: 1180px) and (max-width: 1920px) {
+
+  /* Центрирование */
+
+  .about-us, .services,
+  .scope, .awards,
+  .research, .stages,
+  .millenium {
+    width: 1160px;
+  }
+
+  .content__about-us,
+  .content__scope,
+  .scope__wrapper--margin,
+  .content__awards,
+  .content__stages,
+  .content__millenium {
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 360px) and (max-width: 1439px) {
 
-  /* Глобальные Блоки */
-  
+  /* Глобальные блоки */
+
   .container {
     padding: 0 10px;
   }
+
+  .container__footer--padding {
+    padding: 75px 191px 58px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1179px) {
+
+  /* Размеры шрифтов */
+
+  .heading {
+    width: 100%;
+
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* Глобальные Блоки */
 
   .slogan {
     width: 356px;
@@ -33,15 +72,12 @@
   /* Header позиционирование */
 
   .header__wrapper {
-    width: 100%;
     justify-content: space-between;
   }
 
-  /* Header модификаторы */
-
-  .header__button--width {
+  .header__button {
     width: 62px;
-    height: 38.75px;
+    height: 38px;
   }
 
   /* Scope Позиционирование */
@@ -82,6 +118,14 @@
     margin-bottom: 50px;
   }
 
+  /* Millenium позиционирование */
+
+  .millenium__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   /* Footer модификаторы */
 
   .footer__text--font-size {
@@ -101,27 +145,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 1179px) {
-
-  /* Размеры шрифтов */
-
-  .heading {
-    width: 100%;
-
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  /* Millenium позиционирование */
-
-  .millenium__wrapper {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-@media (min-width: 485px) and (max-width: 1439px) {
+@media (min-width: 485px) and (max-width: 1179px) {
 
   .about-us__title {
     flex-direction: row;

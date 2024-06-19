@@ -68,8 +68,12 @@
 
 .container {
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding: 0 140px;
-  overflow: hidden;
 }
 
 .logo {
@@ -105,6 +109,7 @@
 }
 
 .footer {
+  width: 125%;
   height: 569px;
 
   background: var(--navy);
@@ -151,7 +156,6 @@
 }
 
 .millenium {
-  width: 1160px;
   height: 738px;
 
   border-radius: 20px;
@@ -364,6 +368,7 @@
 
 .header__wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -440,7 +445,7 @@
 /* Services позиционирование */
 
 .content__services {
-  margin: 159px 0 165px;
+  margin: 159px auto 165px;
 }
 
 .services__swiper {
@@ -450,7 +455,6 @@
 .services__swiper-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 54px 20px;
 }
 
@@ -515,17 +519,7 @@
   margin: 100px 0 150px;
 }
 
-  /* Scope модификаторы */
-
-  .scope__wrapper--margin {
-    margin: 0 auto;
-  }
-
 /* Awards позиционирование */
-
-.content__awards {
-  padding: 26px 20px;
-}
 
 .awards__border {
   position: relative;
@@ -549,6 +543,10 @@
 
 /* Awards модификаторы */
 
+.content__awards--padding {
+  padding: 26px 20px;
+}
+
 .awards__swiper--width {
   width: 557px;
 }
@@ -560,7 +558,7 @@
 /* Research позиционирование */
 
 .content__research {
-  margin: 150px 0 119px;
+  margin: 150px auto 119px;
 }
 
 .research__title {
@@ -646,17 +644,14 @@
 
 .img-delimiter {
   width: 1440px;
+  overflow: hidden;
 }
 
 .content__img-delimiter {
-  margin: 121px -140px 150px;
+  margin: 121px auto 150px;
 }
 
 /* Millenium позиционирование */
-
-.content__millenium {
-  margin: 0 auto;
-}
 
 .millenium__wrapper {
   display: flex;
@@ -751,7 +746,7 @@
 /* Footer позиционирование */
 
 .container__footer {
-  margin: 269px -140px 0;
+  margin-top: 269px;
 }
 
 .footer__holder {
@@ -766,7 +761,7 @@
 }
 
 .footer__logo {
-  margin: 0 500px 20px;
+  margin: 0 auto 20px;
 }
 
 .footer__inner {
@@ -779,7 +774,7 @@
 /* Footer модификаторы */
 
 .container__footer--padding {
-  padding: 75px 140px 58px 140px;
+  padding: 75px 140px 58px;
 }
 
 .footer__button--width {

@@ -20,7 +20,7 @@ const services = document.addEventListener('DOMContentLoaded', () => {
 });
 
 const awards = document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
+  if (window.innerWidth >= 360 && window.innerWidth <= 1179) {
     const swiper = new Swiper('.swiper-2', {
       slidesPerView: 1,
       direction: 'horizontal',
@@ -113,7 +113,7 @@ const call = document.addEventListener('DOMContentLoaded', () => {
   const openButton = document.querySelector('.call-open');
 
   function setCallIcon() {
-    if (window.innerWidth >= 360 && window.innerWidth <= 1439) {
+    if (window.innerWidth >= 360 && window.innerWidth <= 1179) {
       openButton.innerHTML = '<img src="./images/call.svg" alt="">';
     } else {
       openButton.innerHTML = 'Заказать звонок';
