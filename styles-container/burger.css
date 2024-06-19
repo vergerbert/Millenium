@@ -1,3 +1,30 @@
+/* Burger позиционирование */
+
+.burger-open {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.burger-open__line {
+  height: 4px;
+
+  border-radius: 1px;
+  background: var(--purple);
+}
+
+.burger-open__line--top {
+  width: 41px;
+}
+
+.burger-open__line--middle {
+  width: 27px;
+}
+
+.burger-open__line--bottom {
+  width: 15px;
+}
+
 @media (min-width: 360px) and (max-width: 1179px) {
 
   /* Блоки */

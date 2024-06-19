@@ -1,0 +1,309 @@
+/* Глобальные блоки */
+
+.millenium {
+  height: 738px;
+
+  border-radius: 20px;
+  background: var(--light-blue);
+}
+
+.heading {
+  width: 205px;
+}
+
+.description {
+  width: 448px;
+}
+
+.form {
+  width: 472px;
+  height: 486px;
+
+  text-align: center;
+
+  border-radius: 20px;
+  background: var(--purple);
+}
+
+/* Декоративные блоки */
+
+.delimiter {
+  width: 100%;
+  border: 0.5px solid var(--purple);
+}
+
+/* Millenium позиционирование */
+
+.millenium__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.millenium__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.millenium__heading {
+  margin-bottom: 35px;
+}
+
+.millenium__form {
+  margin-top: 24px;
+}
+
+.millenium__text {
+  margin: 28px 0 46px;
+}
+
+.millenium__input-box {
+  margin-bottom: 31px;
+}
+
+.millenium__button {
+  margin-bottom: 25px;
+}
+
+/* Millenium модификаторы */
+
+.content__millenium--padding {
+  position: relative;
+  padding: 41px 98px;
+}
+
+.millenium__form--padding {
+  padding: 56px 56px 47px 57px;
+}
+
+.millenium__button--width {
+  width: 341px;
+
+  color: var(--purple);
+  background: var(--white);
+}
+
+.millenium__text--highlight {
+  color: var(--lavender);
+}
+
+/* Millenium позиционирование изображений */
+
+.millenium__octa {
+  position: absolute;
+
+  top: -70px;
+  left: 351px;
+}
+
+.millenium__cylinder {
+  position: absolute;
+
+  top: 240px;
+  right: -40px;
+}
+
+.millenium__confetti {
+  position: absolute;
+
+  top: 540px;
+  left: 512px;
+}
+
+.millenium__cube {
+  position: absolute;
+
+  top: 643px;
+  right: -10px;
+}
+
+.millenium__hand {
+  position: absolute;
+  
+  left: 0;
+  top: 487px;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+  /* Глобальные блоки */
+
+  .millenium {
+    height: 932px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .form {
+    width: 94%;
+    height: 486px;
+  }
+
+  /* Декоративные элементы */
+
+  .circle {
+    width: 37px;
+    height: 37px;
+  }
+
+  .streak {
+    border: 0.5px solid var(--silver);
+  }
+
+  .octa {
+    width: 119px;
+    height: 119px;
+  }
+
+  .cylinder {
+    width: 103px;
+    height: 102px;
+  }
+
+  .confetti {
+    width: 42px;
+    height: 41px;
+  }
+
+  .cube {
+    width: 91px;
+    height: 91px;
+  }
+
+  .hand {
+    width: 221px;
+    height: 113px;
+  }
+
+  /* Millenium позиционирование */
+  
+  .millenium__inner {
+    text-align: center;
+  }
+
+  .millenium__heading {
+    margin: 40px 0 30px;
+  }
+
+  .millenium__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__caption {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .millenium__input-box {
+    margin: 0 10px 40px;
+  }
+
+  /* Millenium модификаторы */
+
+  .content__millenium--padding {
+    padding: 0;
+  }
+
+  .millenium__inner--padding {
+    padding: 0 10px;
+  }
+
+  .millenium__form--padding {
+    padding: 37px 13px 46px;
+  }
+  
+  .millenium__button--width {
+    width: 268px;
+  }
+
+  /* Millenium позиционирование изображений */
+
+  .millenium__octa {
+    top: -62px;
+    left: -10px;
+  }
+  
+  .millenium__cylinder {
+    top: -39px;
+    right: -33px;
+  }
+  
+  .millenium__confetti {
+    top: 680px;
+    right: 0;
+    left: 20px;
+  }
+  
+  .millenium__cube {
+    top: 763px;
+    right: -10px;
+  }
+  
+  .millenium__hand {
+    left: 0;
+    top: 810px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+
+  /* Глобальные блоки */
+
+  .millenium {
+    height: 1050px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  /* Millenium позиционирование */
+
+  .millenium__inner {
+    text-align: center;
+  }
+
+  .millenium__heading {
+    margin-bottom: 15px;
+  }
+
+  .millenium__form {
+    margin: 59px 74px 0;
+  }
+
+  /* Millenium модификаторы */
+
+  .content__millenium--padding {
+    padding: 68px 64px;
+  }
+
+  /* Millenium позиционирование изображений */
+
+  .millenium__octa {
+    left: 53px;
+  }
+
+  .millenium__cylinder {
+    top: 385px;
+    right: -18px;
+  }
+
+  .millenium__confetti {
+    top: 751px;
+    right: 0;
+    left: 52px;
+  }
+
+  .millenium__cube {
+    top: 850px;
+    right: 19px;
+  }
+
+  .millenium__hand {
+    top: 812px;
+  }
+}

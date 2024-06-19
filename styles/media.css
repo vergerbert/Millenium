@@ -145,10 +145,26 @@
   }
 }
 
-@media (min-width: 485px) and (max-width: 1179px) {
+@media (min-width: 768px) and (max-width: 1151px) {
+  .swiper-slide-1:nth-child(n+3) {
+    display: none;
+  }
+}
 
-  .about-us__title {
-    flex-direction: row;
-    gap: 5px;
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  .stages__wrapper {
+    margin: 30px 36px 0 36px;
+  }
+}
+
+@media (min-width: 485px) and (max-width: 767px) {
+
+  .form {
+    width: 435px;
+  }
+
+  .millenium__inner--padding {
+    padding: 0 40px;
   }
 }
