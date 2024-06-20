@@ -9,13 +9,8 @@
 
   /* ! Разделитель ! */
 
-  .img-delimiter {
-    width: 1120px;
-    height: 459px;
-  }
-
   .content__img-delimiter {
-    margin: 100px -176px 100px;
+    margin: 100px 0;
   }
 
   /* ! Application ! */
@@ -36,18 +31,39 @@
   .application__call-close {
     right: 12px;
   }
+  
+  /* ! Burger ! */
+
+  /* Блоки */
+
+  .overlay-2 {
+    top: 97px;
+  }
+  
+  .burger {
+    top: 98px;
+  }
 
   /* ! Header ! */
+  
+  /* Модификаторы */
 
-  /* Позиционирование */
+  .header__wrapper--margin {
+    margin: 23px 22px 60px 31px;
+  }
 
-  .container__header {
-    margin: 23px 20px 41px;
+  .header__button--width {
+    width: 62px;
+    height: 38px;
   }
 
   /* ! About Us ! */
 
   /* Блоки */
+
+  .slogan {
+    width: 356px;
+  }
 
   .offer {
     width: 340px;
@@ -228,6 +244,7 @@
   /* Позиционирование изображений */
 
   .millenium__octa {
+    top: -70px;
     left: 53px;
   }
 
@@ -248,6 +265,7 @@
   }
 
   .millenium__hand {
+    left: 0;
     top: 812px;
   }
 
@@ -263,7 +281,6 @@
 
   .footer {
     width: 103%;
-    height: 506px;
   }
   
   /* Позиционирование */
@@ -300,5 +317,24 @@
 
   .delimiter.desktop, .footer__holder.phone {
     display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1151px) {
+
+  .swiper-1 {
+    width: 748px;
+  }
+  
+  .swiper-slide-1:nth-child(n+3) {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1920px) {
+  
+  .img-delimiter {
+    width: 1440px;
+    height: 590px;
   }
 }
