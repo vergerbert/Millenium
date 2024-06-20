@@ -61,21 +61,6 @@
   opacity: 1;
 }
 
-/* ! Разделитель ! */
-
-.img-delimiter {
-  background: url(./images/office.png);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.content__img-delimiter {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-}
-
 /* ! Модификаторы ! */
 
 .highlight {
@@ -96,6 +81,21 @@
 
 .no-scroll {
   overflow: hidden;
+}
+
+/* ! Разделитель ! */
+
+.img-delimiter {
+  background: url(./images/office.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.content__img-delimiter {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 /* ! Input Box ! */

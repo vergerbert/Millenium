@@ -61,13 +61,8 @@
 
   /* Блоки */
 
-  .slogan {
-    width: 356px;
-  }
-
   .offer {
     width: 340px;
-    text-align: center;
   }
 
   .background {
@@ -77,9 +72,19 @@
 
   /* Позиционирование */
 
+  .about-us__wrapper {
+    display: grid;
+    justify-items: center;
+  }
+
+  .about-us__inner {
+    grid-column: 1;
+  }
+
   .about-us__background {
-    top: -24px;
-    right: -83px;
+    position: relative;
+    grid-column: 2;
+    margin: -50px 0 0 -75px;
   }
 
   .about-us__slogan {
@@ -328,6 +333,12 @@
   
   .swiper-slide-1:nth-child(n+3) {
     display: none;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1179px) {
+  .offer {
+    width: 400px;
   }
 }
 
