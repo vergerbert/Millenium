@@ -1,3 +1,18 @@
+(function() {
+  let initialWidth = window.innerWidth;
+
+  function checkResize() {
+    const currentWidth = window.innerWidth;
+
+    if (currentWidth !== initialWidth) {
+      location.reload();
+    }
+  }
+
+  window.addEventListener('resize', checkResize);
+  window.addEventListener('orientationchange', checkResize);
+})();
+
 // Слайдеры
 
 const services = document.addEventListener('DOMContentLoaded', () => {
