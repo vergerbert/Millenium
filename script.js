@@ -1,7 +1,3 @@
-window.addEventListener('resize', () => {
-  location.reload();
-});
-
 // Слайдеры
 
 const services = document.addEventListener('DOMContentLoaded', () => {
