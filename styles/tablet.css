@@ -1,0 +1,185 @@
+@media (min-width: 360px) and (max-width: 1179px) {
+
+  /* ! Application ! */
+
+  .application.show {
+    top: 133px;
+  }
+
+  /* ! Burger ! */
+  
+  /* Блоки */
+
+  .overlay-2 {
+    top: 98px;
+  }
+  
+  .overlay-2.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .burger {
+    position: fixed;
+    top: 99px;
+    left: -360px;
+    transition: left 0.3s;
+    z-index: 20;
+  }
+  
+  .burger.open {
+    left: 0;
+  }
+
+  .burger-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+
+  /* Позиционирование */
+
+  .header__menu {
+    margin: 0;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .burger__wrapper {
+    position: relative;
+    width: 360px;
+    height: 100vh;
+    padding: 80px 91px 88px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    background: white;
+  }
+
+  /* Модификаторы */
+
+  .contacts--highlight {
+    color: var(--purple);
+  }
+
+  .contacts__item--highlight {
+    color: var(--purple);
+  }
+
+  .header__contacts--margin-bottom {
+    margin-bottom: 88px;
+  }
+
+  .contacts__item--margin-bottom {
+    margin-bottom: 28px;
+  }
+
+  .connection__item--margin-bottom {
+    margin-bottom: 36px;
+  }
+
+  .burger-open__line--bottom {
+    transition: width 0.3s, background 0.3s;
+  }
+
+  .burger-open__line--bottom.changed {
+    width: 41px;
+    background: var(--green);
+  }
+
+  /* ! Header ! */
+
+  .header__wrapper {
+    justify-content: space-between;
+  }
+
+  .header__button {
+    width: 62px;
+    height: 38px;
+  }
+
+  /* ! About Us ! */
+
+  .slogan {
+    width: 356px;
+  }
+
+  /* ! Scope ! */
+
+  .scope__list {
+    margin-top: 17px;
+  }
+
+  /* ! Awards ! */
+
+  .awards__swiper-pagination {
+    margin-bottom: 15px;
+  }
+
+  .awards__swiper--padding {
+    padding-bottom: 70px;
+  }
+
+  /* ! Research ! */
+
+  .research__title {
+    margin-bottom: 30px;
+  }
+
+  /* ! Stages ! */
+
+  .stages__priority {
+    margin-bottom: 50px;
+  }
+
+  /* ! Millenium ! */
+
+  .heading {
+    width: 100%;
+  }
+
+  .millenium__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .millenium__inner {
+    text-align: center;
+  }
+
+  /* ! Footer ! */
+
+  .footer__text--font-size {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer__logo--size {
+    width: 156px;
+    height: 55px;
+  }
+
+  /* display: none; */
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1439px) {
+  .container {
+    padding: 0 10px;
+  }
+}

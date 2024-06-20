@@ -1,0 +1,240 @@
+@media (min-width: 1180px) and (max-width: 1920px) {
+
+
+  /* ! Центрирование ! */
+
+  .about-us, .services,
+  .scope, .awards,
+  .research, .stages,
+  .millenium {
+    width: 1160px;
+  }
+
+  .content__about-us,
+  .content__scope,
+  .scope__wrapper--margin,
+  .content__awards,
+  .content__stages,
+  .content__millenium {
+    margin: 0 auto;
+  }
+
+  /* ! Application ! */
+  
+  .application {
+    top: -540px;
+    width: 766px;
+  }
+
+  .application.show {
+    top: 189px;
+  }
+
+  .application__call-close {
+    right: 17px;
+  }
+
+  /* ! Header ! */
+
+  .container__header {
+    margin: 32px 0 67px;
+  }
+
+  .header__wrapper {
+    justify-content: center;
+  }
+
+  /* ! About Us ! */
+
+  .slogan {
+    width: 619px;
+  }
+
+  .offer {
+    width: 472px;
+  }
+
+  .background {
+    width: 855px;
+    height: 569px;
+  }
+
+  .about-us__background {
+    top: -124px;
+    right: -124px;
+  }
+
+  .about-us__slogan {
+    margin: 33px 0 116px;
+  }
+  
+  .about-us__button {
+    margin-bottom: 20px;
+  }
+
+  /* ! Services ! */
+
+  .swiper-slide-1 {
+    width: 373px;
+  }
+
+  /* ! Scope ! */
+
+  .scope__title {
+    margin-bottom: 59px;
+  }
+
+  /* ! Awards ! */
+
+  .img-certificate {
+    width: 231px;
+    height: 327px;
+  }
+
+  .awards__border {
+    position: relative;
+    padding: 27px 96px 19px 467px;
+  }
+  
+  .awards__gold-bitrix {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+  }
+
+  .awards__swiper--width {
+    width: 557px;
+  }
+
+  /* ! Research ! */
+
+  .content__research {
+    margin: 150px auto 119px;
+  }
+
+  .research__title {
+    margin-bottom: 66px;
+  }
+
+  /* ! Stages ! */
+
+  .stages__wrapper {
+    margin-top: 63px;
+  }
+
+  .priority__subtitle {
+    margin-left: 125px;
+  }
+
+  .stages__priority {
+    margin-bottom: 55px;
+  }
+
+  /* ! Millenium ! */
+
+  .millenium {
+    height: 738px;
+  }  
+
+  .heading {
+    width: 205px;
+  }
+
+  .description {
+    width: 448px;
+  }
+
+  .millenium__wrapper {
+    justify-content: space-between;
+  }
+
+  .millenium__heading {
+    margin-bottom: 35px;
+  }
+
+  /* Позиционирование изображений */
+
+  .millenium__octa {
+    top: -70px;
+    left: 351px;
+  }
+  
+  .millenium__cylinder {
+    top: 240px;
+    right: -40px;
+  }
+  
+  .millenium__confetti {
+    top: 540px;
+    left: 512px;
+  }
+  
+  .millenium__cube {
+    top: 643px;
+    right: -10px;
+  }
+  
+  .millenium__hand {  
+    left: 0;
+    top: 487px;
+  }
+
+  /* ! Footer ! */
+
+  .footer {
+    width: 125%;
+    height: 569px;
+  }
+  
+  .container__footer {
+    margin-top: 269px;
+  }
+
+  .footer__logo {
+    margin: 0 auto 20px;
+  }
+
+  .footer__holder--margin {
+    margin: 30px 0 32px;
+  }
+  
+  .footer__holder--margin-2 {
+    margin: 14px 0 24px;
+  }
+
+  .footer__logo--size {
+    width: 161px;
+    height: 55px;
+  }
+
+  .container__footer--padding {
+    padding: 75px 140px 58px;
+  }
+
+  /* display: none; */
+ 
+  .laptop, .phone,
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+
+  /* ! Блоки ! */
+
+  .container {
+    padding: 0 140px;
+  }
+
+  /* ! Разделитель ! */
+
+  .img-delimiter {
+    width: 1440px;
+    overflow: hidden;
+  }
+
+  .content__img-delimiter {
+    margin: 121px auto 150px;
+  }
+}

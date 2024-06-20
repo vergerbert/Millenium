@@ -37,3 +37,147 @@
   font-style: normal;
   font-display: swap;
 }
+
+.h1 {
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.subtitle, .caption {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.contacts {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.headline {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.h4, .tagline, .description, 
+.footer__text--font-size {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.subject, .slogan {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.offer {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.h5, .menu {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.text, .button {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.tiny {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.tiny, .subject {
+  font-weight: 500;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  
+  .h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title, .caption {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .headline, .contacts {
+    font-size: 18px;
+    font-weight: 22px;
+  }
+
+  .contacts {
+    font-weight: 700;
+  }
+
+  .offer {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .subtitle, .h4, .h5, .text,
+  .tagline, .priority__h4_font-size,
+  .description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1179px) {
+
+  .heading {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .slogan {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+
+  .h1 {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  .title, .subtitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .contacts {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .offer {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tagline {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
