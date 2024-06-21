@@ -152,9 +152,8 @@
 
   transition: 0.2s ease-in;
 
-  background-image: url(../images/check-mark.svg);
+  background: url(./images/check-mark.svg) no-repeat;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .checkbox:checked + .custom-checkbox::before {
